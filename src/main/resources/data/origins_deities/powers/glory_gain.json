@@ -15,5 +15,6 @@
   },
   "target_condition": {
     "type": "origins_deities:is_hostile"
-  }
+  },
+  "cooldown": 0
 }

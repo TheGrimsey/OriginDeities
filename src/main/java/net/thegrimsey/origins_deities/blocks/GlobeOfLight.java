@@ -1,13 +1,17 @@
 package net.thegrimsey.origins_deities.blocks;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class GlobeOfLight extends Block {
     final VoxelShape SHAPE = createCuboidShape(4,4,4,12,12,12);

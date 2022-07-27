@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:mangrove_swamp",
-    "minecraft:swamp",
-    "magicfungi:host_biome"
-  ]
-}
