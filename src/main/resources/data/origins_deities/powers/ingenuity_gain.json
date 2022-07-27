@@ -1,0 +1,16 @@
+{
+  "type": "origins:modify_crafting",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "origins_deities:ingenuity",
+    "change": 1,
+    "operation": "add"
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins_deities:ingenuity",
+    "comparison": "<",
+    "compare_to": 30
+  }
+}

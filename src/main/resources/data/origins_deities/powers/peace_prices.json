@@ -1,0 +1,17 @@
+{
+    "name": "Merchant of Peace",
+    "description": "All villager trade prices are lowered.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 200,
+    "tick_rate": 180,
+    "effects": [
+        {
+            "effect": "minecraft:hero_of_the_village",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ]
+}

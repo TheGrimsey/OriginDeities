@@ -1,0 +1,39 @@
+{
+  "type": "origins:conditioned_attribute",
+  "tick_rate": 30,
+  "name": "Blessing of Trickery",
+  "description": "You move faster when enshrouded in darkness or tall grass.",
+  "modifier": {
+    "name": "TrickerySpeed",
+    "attribute": "minecraft:generic.movement_speed",
+    "value": 0.15,
+    "operation": "multiply_total"
+  },
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {   
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:block",
+          "block": "minecraft:grass"
+        }
+      },
+      {   
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:block",
+          "block": "minecraft:tall_grass"
+        }
+      },
+      {   
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:light_level",
+          "comparison": "<",
+          "compare_to": 8
+        }
+      }
+    ]
+  }
+}

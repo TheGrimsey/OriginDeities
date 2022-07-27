@@ -1,0 +1,58 @@
+{
+  "type": "origins:active_self",
+  "name": "Blessing of Sacrifice",
+  "description": "Heal all nearby players at the cost of your own health.",
+  "cooldown": 250,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+    "bar_index": 4
+  },
+  "entity_action": {
+    "type": "origins:area_of_effect",
+    "radius": 16,
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:target_action",
+            "action": {
+              "type": "origins:heal",
+              "amount": 6
+            }
+          },
+          {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1,
+                "source": {
+                    "name": "wither",
+                    "unblockable": true,
+                    "bypasses_armor": true,
+                    "magic": true
+                }
+            }
+          }
+        ]
+    },
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:can_see"
+        },
+        {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        }
+      ]
+    }
+  },
+  "key": {
+    "key": "key.origins_deities.god_active",
+    "continuous": false
+  }
+}

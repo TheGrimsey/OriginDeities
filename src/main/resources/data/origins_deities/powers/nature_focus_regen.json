@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_over_time",
+    "hidden": true,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_deities:nature_focus",
+      "change": 1,
+      "operation": "add"
+    },
+    "interval": 20
+  }

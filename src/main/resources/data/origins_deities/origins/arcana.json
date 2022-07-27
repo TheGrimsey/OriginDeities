@@ -1,0 +1,12 @@
+{
+	"name": "Aranuo",
+	"description": "God of Knowledge & Magic.",
+	"powers": [
+		"origins_deities:arcana_xp"
+	],
+	"icon": {
+		"item": "minecraft:enchanted_book"
+	},
+	"order": 1,
+	"impact": 1
+}

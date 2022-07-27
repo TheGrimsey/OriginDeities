@@ -1,0 +1,11 @@
+{
+  "type": "origins:resource",
+  "name": "Blessing of Ingenuity",
+  "description": "When crafting you gain ingenuity.",
+  "min": 0,
+  "max": 30,
+  "hud_render": {
+    "bar_index": 12,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png"
+  }
+}

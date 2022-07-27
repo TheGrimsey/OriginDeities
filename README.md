@@ -1,9 +1,15 @@
-# Fabric Example Mod
+# Origin Deities
 
-## Setup
+A Fabric mod adding a layer for deities to the Origins mod. **I will not port this to Forge.**
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+This mod was originally made for a personal server project and is meant to be used in multiplayer, a lot of origins in this are built with usage in multiplayer in mind but may work in singleplayer as well. 
+
+These are *unlikely* to be balanced.
+
+## What are these deities?
+
+I made them up. Well, majority of them are based on some real deity so, I didn't fully make them up. :shrug:
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is available under the MIT license.

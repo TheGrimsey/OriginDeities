@@ -1,0 +1,24 @@
+{
+  "name": "Healing powers",
+  "description": "You heal an additional 2 hearts from healing potions.",
+  "type": "origins:action_on_item_use",
+  "entity_action": {
+      "type": "origins:heal",
+      "amount": 4
+  },
+  "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+          {
+              "type": "origins:ingredient",
+              "ingredient": {
+                  "item": "minecraft:potion"
+              }
+          },
+          {
+              "type": "origins:nbt",
+              "nbt": "{Potion: 'minecraft:healing'}"
+          }
+      ]
+  }
+}

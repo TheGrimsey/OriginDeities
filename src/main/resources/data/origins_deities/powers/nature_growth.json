@@ -1,0 +1,106 @@
+{
+  "type": "origins:action_over_time",
+  "name": "Blessing of Nature",
+  "description": "You become one with nature causing it to grow around you.",
+  "interval": 150,
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+        "type": "origins:block_action_at",
+        "block_action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:bonemeal",
+              "effects": true
+            },
+            {
+              "type":"origins:offset",
+              "y":-1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": true
+              }
+            },
+            {
+              "type":"origins:offset",
+              "x":-1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "x":1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "z":-1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "z":1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "y":1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": true
+              }
+            },
+            {
+              "type":"origins:offset",
+              "y":1,
+              "x":-1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "y":1,
+              "x":1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "y":1,
+              "z":-1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type":"origins:offset",
+              "y":1,
+              "z":1,
+              "action":{
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            }
+          ]
+        }
+    },
+    "chance": 0.25
+  }
+}

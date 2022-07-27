@@ -1,0 +1,23 @@
+{
+    "hidden": true,
+    "type": "origins:modify_damage_dealt",
+    "target_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player"
+            },
+            {
+                "type": "origins:nbt",
+                "nbt": "{Tags: ['enemy']}",
+                "inverted": true
+            }
+        ]
+    },
+    "modifier": {
+        "name": "No damage when peace",
+        "operation": "multiply_total",
+        "value": -1.0
+    }
+}

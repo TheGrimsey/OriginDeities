@@ -1,0 +1,11 @@
+{
+  "type": "origins:modify_xp_gain",
+  "name": "Blessing of Knowledge",
+  "description": "You gain an additional point of experience from all sources.",
+  "modifiers": [
+    {
+      "operation": "addition",
+      "value": 1
+    }
+  ]
+}

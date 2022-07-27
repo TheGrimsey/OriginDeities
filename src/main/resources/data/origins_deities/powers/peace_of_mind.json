@@ -1,0 +1,22 @@
+{
+    "name": "Peace of Mind",
+    "description": "You can't be attacked by or attack other players.", 
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:player"
+                },
+                {
+                    "type": "origins:nbt",
+                    "nbt": "{Tags: ['enemy']}",
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}

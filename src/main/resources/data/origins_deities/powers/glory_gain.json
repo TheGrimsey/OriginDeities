@@ -1,0 +1,19 @@
+{
+  "type": "origins:self_action_on_kill",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "origins_deities:glory",
+    "change": 1,
+    "operation": "add"
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins_deities:glory",
+    "comparison": "<",
+    "compare_to": 20
+  },
+  "target_condition": {
+    "type": "origins_deities:is_hostile"
+  }
+}

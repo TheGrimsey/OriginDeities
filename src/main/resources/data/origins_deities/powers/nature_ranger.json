@@ -1,0 +1,27 @@
+{
+  "name": "Blessing of the Ranger",
+  "description": "You deal more damage with bows, crossbows, and potions.",
+  "type": "origins:modify_damage_dealt",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "arrow"
+      },
+      {
+        "type": "origins:name",
+        "name": "arrow.item"
+      },
+      {
+        "type": "origins:name",
+        "name": "magic"
+      }
+    ]
+  },
+  "modifier": {
+      "name": "Extra damage when using bow or crossbow",
+      "operation": "addition",
+      "value": 2.0
+  }
+}

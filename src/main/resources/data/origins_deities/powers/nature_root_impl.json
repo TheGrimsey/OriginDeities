@@ -1,0 +1,107 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:and",
+                  "actions": [
+                    {
+                      "type": "origins:apply_effect",
+                      "effects": [
+                          {
+                              "effect": "minecraft:slowness",
+                              "duration": 400,
+                              "amplifier": 6,
+                              "is_ambient": false,
+                              "show_particles": false,
+                              "show_icon": true
+                          }
+                      ]
+                    },
+                    {
+                      "type": "origins:apply_effect",
+                      "effects": [
+                          {
+                              "effect": "minecraft:poison",
+                              "duration": 400,
+                              "amplifier": 1,
+                              "is_ambient": false,
+                              "show_particles": false,
+                              "show_icon": true
+                          }
+                      ],
+                      "condition": {
+                        "type": "origins:entity_group",
+                        "group": "undead",
+                        "inverted": true
+                      }
+                    },
+                    {
+                      "type": "origins:apply_effect",
+                      "effects": [
+                          {
+                              "effect": "minecraft:regeneration",
+                              "duration": 400,
+                              "amplifier": 1,
+                              "is_ambient": false,
+                              "show_particles": false,
+                              "show_icon": true
+                          }
+                      ],
+                      "condition": {
+                        "type": "origins:entity_group",
+                        "group": "undead"
+                      }
+                    }
+                  ]
+                }
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "origins_deities:nature_focus",
+                    "change": -10
+                }
+            }
+        ]
+    },
+    "damage_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:name",
+          "name": "arrow"
+        },
+        {
+          "type": "origins:name",
+          "name": "arrow.item"
+        },
+        {
+          "type": "origins:name",
+          "name": "magic"
+        }
+      ]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "origins_deities:nature_root"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "origins_deities:nature_focus",
+                "comparison": ">=",
+                "compare_to": 10
+            }
+        ]
+    }
+  }
+  

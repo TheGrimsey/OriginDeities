@@ -1,0 +1,6 @@
+{
+  "type": "origins:night_vision",
+  "name": "Blessing of Light",
+  "description": "You gain weak night vision.",
+  "strength": 0.1
+}

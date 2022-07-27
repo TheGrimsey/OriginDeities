@@ -1,0 +1,14 @@
+{
+	"name": "Arum",
+	"description": "God of Soldiers, Order, and War.",
+	"powers": [
+		"origins_deities:glory",
+		"origins_deities:glory_gain",
+		"origins_deities:burst_of_glory"
+	],
+	"icon": {
+		"item": "minecraft:diamond_axe"
+	},
+	"order": 1,
+	"impact": 1
+}

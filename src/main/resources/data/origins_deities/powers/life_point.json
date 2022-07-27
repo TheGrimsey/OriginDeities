@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "name": "Blessing of Life",
+  "description": "You have three additional hearts of health.",
+  "modifier": {
+    "name": "LifeGodHealthIncrease",
+    "attribute": "minecraft:generic.max_health",
+    "value": 6.0,
+    "operation": "addition"
+  }
+}

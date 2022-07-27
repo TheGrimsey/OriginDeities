@@ -1,0 +1,14 @@
+{
+	"name": "Hemer",
+	"description": "God of Light.",
+	"powers": [
+		"origins_deities:globe_of_light",
+		"origins_deities:refraction",
+		"origins_deities:light_glow"
+	],
+	"icon": {
+		"item": "origins_deities:globe_of_light"
+	},
+	"order": 1,
+	"impact": 1
+}

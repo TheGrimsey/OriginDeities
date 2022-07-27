@@ -1,0 +1,33 @@
+{
+    "hidden": true,
+    "type": "origins:entity_glow",
+    "use_teams": false,
+    "red": 0.6,
+    "green": 0.62,
+    "blue": 1,
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:origin",
+                "layer": "origins_deities:god",
+                "origin": "origins_deities:arcana"
+            }
+        },
+        {
+          "type": "origins:distance",
+          "comparison": "<=",
+          "compare_to": 24
+        },
+        {
+            "type": "origins:can_see"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins_deities:peace_diplomatic_vision"
+    }
+  }

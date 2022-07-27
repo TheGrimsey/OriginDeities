@@ -1,38 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "origins_deities",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Origins Deities",
+  "description": "Adding deities to the Origins mod",
   "authors": [
-    "Me!"
+    "TheGrimsey"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/TheGrimsey/OriginDeities",
+    "sources": "https://github.com/TheGrimsey/OriginDeities",
+    "issues": "https://github.com/TheGrimsey/OriginDeities/issues"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.thegrimsey.origins_deities.OriginsDeities"
+    ],
+    "client": [
+      "net.thegrimsey.origins_deities.OriginsDeitiesClient"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "java": ">=17",
+    "origins": ">=1.6.2"
   }
 }

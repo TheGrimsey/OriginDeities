@@ -1,0 +1,14 @@
+{
+  "type": "origins:entity_glow",
+  "name": "Common Light",
+  "description": "Others following the same god as you glow.",
+  "use_teams": false,
+  "red": 0.78,
+  "green": 0.75,
+  "blue": 0.733,
+  "entity_condition": {
+    "type": "origins:origin",
+    "origin": "origins_deities:light",
+    "layer": "origins_deities:god"
+  }
+}

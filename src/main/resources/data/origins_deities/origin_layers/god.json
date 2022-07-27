@@ -1,0 +1,20 @@
+{
+    "replace": false,
+    "order": 3,
+    "enabled": true,
+    "name": "deity",
+
+    "origins": [
+      "origins_deities:life",
+      "origins_deities:arcana",
+      "origins_deities:ingenuity",
+      "origins_deities:light",
+      "origins_deities:nature",
+      "origins_deities:peace",
+      "origins_deities:war",
+      "origins_deities:trickery"
+    ],
+    "allow_random": true,
+    "allow_random_unchoosable": false,
+    "hidden": false
+  }
