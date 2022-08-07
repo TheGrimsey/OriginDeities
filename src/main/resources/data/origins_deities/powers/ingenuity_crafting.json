@@ -14,6 +14,12 @@
   },
   "item_condition": {
     "type": "origins_deities:can_increase_count_by",
-    "amount": 30
+    "amount": 1
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins_deities:ingenuity",
+    "comparison": ">=",
+    "compare_to": 30
   }
 }
