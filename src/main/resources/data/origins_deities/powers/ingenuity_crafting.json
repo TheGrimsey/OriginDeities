@@ -13,8 +13,20 @@
     "operation": "set"
   },
   "item_condition": {
-    "type": "origins_deities:can_increase_count_by",
-    "amount": 1
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins_deities:can_increase_count_by",
+        "amount": 1
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "origins_deities:ingenuity_ignored"
+        },
+        "inverted": true
+      }
+    ]
   },
   "condition": {
     "type": "origins:resource",

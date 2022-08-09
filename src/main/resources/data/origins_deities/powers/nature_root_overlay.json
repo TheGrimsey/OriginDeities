@@ -5,7 +5,7 @@
     "red": 0.1,
     "green": 0.5,
     "blue": 0.1,
-    "strength": 0.7,
+    "strength": 0.4,
     "draw_mode": "nausea",
     "draw_phase": "above_hud",
     "visible_in_third_person": false,

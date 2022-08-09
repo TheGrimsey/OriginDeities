@@ -1,0 +1,56 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_block",
+    "minecraft:diamond",
+
+    "minecraft:redstone_block",
+    "minecraft:redstone",
+
+    "minecraft:lapis_block",
+    "minecraft:lapis_lazuli",
+
+    "minecraft:iron_block",
+    "minecraft:iron_ingot",
+
+    "minecraft:copper_block",
+    "minecraft:waxed_copper_block",
+    "minecraft:copper_ingot",
+
+    "minecraft:gold_block",
+    "minecraft:gold_ingot",
+
+    "minecraft:coal_block",
+    "minecraft:coal",
+
+    "minecraft:emerald_block",
+    "minecraft:emerald",
+
+    "minecraft:netherite_block",
+    "minecraft:netherite_ingot",
+
+    "minecraft:raw_copper_block",
+    "minecraft:raw_copper",
+
+    "minecraft:raw_iron_block",
+    "minecraft:raw_iron",
+
+    "minecraft:raw_gold_block",
+    "minecraft:raw_gold",
+
+    "minecraft:bone_block",
+    "minecraft:bone_meal",
+
+    "minecraft:hay_block",
+    "minecraft:wheat",
+
+    "minecraft:slime_block",
+    "minecraft:slime_ball",
+
+    "minecraft:dried_kelp_block",
+    "minecraft:dried_kelp",
+
+    "minecraft:honey_block",
+    "minecraft:honey_bottle"
+  ]
+}

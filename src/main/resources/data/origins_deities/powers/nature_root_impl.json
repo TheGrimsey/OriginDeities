@@ -2,7 +2,6 @@
     "hidden": true,
     "type": "origins:action_on_hit",
     "bientity_action": {
-        
         "type": "origins:and",
         "actions": [
             {

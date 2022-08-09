@@ -102,5 +102,9 @@
         }
     },
     "chance": 0.25
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "origins_deities:nature_root"
   }
 }

@@ -7,10 +7,17 @@
     "change": 1,
     "operation": "add"
   },
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "origins_deities:ingenuity_ignored"
+    },
+    "inverted": true
+  },
   "condition": {
     "type": "origins:resource",
     "resource": "origins_deities:ingenuity",
     "comparison": "<",
     "compare_to": 30
   }
-}
+},
