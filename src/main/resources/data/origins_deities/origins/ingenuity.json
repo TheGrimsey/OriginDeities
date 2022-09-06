@@ -1,6 +1,6 @@
 {
-	"name": "Alai",
-	"description": "Goddess of Ingenuity. Patron goddess of Sanctuary",
+	"name": "origin.origin_deities.ingenuity.name",
+	"description": "origin.origin_deities.ingenuity.description",
 	"powers": [
 		"origins_deities:ingenuity",
 		"origins_deities:ingenuity_gain",
@@ -9,6 +9,5 @@
 	"icon": {
 		"item": "minecraft:crafting_table"
 	},
-	"order": 1,
 	"impact": 2
 }

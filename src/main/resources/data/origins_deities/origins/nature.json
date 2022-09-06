@@ -1,6 +1,6 @@
 {
-	"name": "Arthera",
-	"description": "Goddess of Nature.",
+	"name": "origin.origin_deities.nature.name",
+	"description": "origin.origin_deities.nature.description",
 	"powers": [
 		"origins_deities:nature_growth",
 		"origins_deities:nature_ranger",
@@ -13,6 +13,5 @@
 	"icon": {
 		"item": "minecraft:red_tulip"
 	},
-	"order": 1,
 	"impact": 1
 }

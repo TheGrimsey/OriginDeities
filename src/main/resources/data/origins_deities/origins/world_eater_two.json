@@ -1,0 +1,15 @@
+{
+	"name": "origin.origin_deities.world_eater.name",
+	"description": "origin.origin_deities.world_eater.description",
+	"powers": [
+		"origins_deities:world_eater/order",
+		"origins_deities:world_eater/order_gain",
+		"origins_deities:world_eater/enemy_of_peace"
+	],
+	"icon": {
+		"item": "minecraft:dragon_egg"
+	},
+	"order": 0,
+	"impact": 1,
+	"unchoosable": true
+}

@@ -1,0 +1,79 @@
+{
+  "name": "origin.origin_deities.world_eater.veilwalker.name",
+  "description": "origin.origin_deities.world_eater.veilwalker.description",
+
+  "type": "origins:multiple",
+
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins_deities.god_active"
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins_deities:world_eater/order",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "invisibility": {
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins_deities:world_eater/veilwalker_toggle"
+    }
+  },
+  "shader": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/pencil.json",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins_deities:world_eater/veilwalker_toggle"
+    }
+  },
+  "phasing": {
+    "type": "origins:phasing",
+    "blacklist": true,
+    "render_type": "blindness",
+    "view_distance": 20,
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "origins:unphasable"
+    },
+    "phase_down_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:on_block"
+        }
+      ]
+    }
+  },
+  "drain_order": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_deities:world_eater/order",
+      "change": -1,
+      "operation": "add"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins_deities:world_eater/veilwalker_toggle"
+    }
+  },
+  "nightvision": {
+    "type": "origins:night_vision",
+    "strength": 0.9,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins_deities:world_eater/veilwalker_toggle"
+    }
+  }
+}

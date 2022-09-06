@@ -15,6 +15,11 @@
                     "type": "origins:nbt",
                     "nbt": "{Tags: ['enemy']}",
                     "inverted": true
+                },
+                {
+                    "type": "origins:power",
+                    "power": "origins_deities:world_eater/enemy_of_peace",
+                    "inverted": true
                 }
             ]
         }

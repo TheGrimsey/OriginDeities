@@ -12,7 +12,30 @@
       "origins_deities:nature",
       "origins_deities:peace",
       "origins_deities:war",
-      "origins_deities:trickery"
+      "origins_deities:trickery",
+      {
+        "condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:origin",
+              "layer": "origins:origin",
+              "origin": "origins:enderian"
+            },
+            {
+              "type": "origins:origin",
+              "layer": "origins:origin",
+              "origin": "haema:vampire"
+            }
+          ]
+        },
+        "origins": [
+          "origins_deities:world_eater",
+          "origins_deities:world_eater_two",
+          "origins_deities:world_eater_three",
+          "origins_deities:world_eater_four"
+        ]
+      }
     ],
     "allow_random": true,
     "allow_random_unchoosable": false,

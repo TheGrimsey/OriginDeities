@@ -1,6 +1,6 @@
 {
     "hidden": true,
-    "type": "origins:modify_damage_dealt",
+    "type": "origins:modify_projectile_damage",
     "target_condition": {
         "type": "origins:and",
         "conditions": [
@@ -21,7 +21,7 @@
         ]
     },
     "modifier": {
-        "name": "No damage when peace",
+        "name": "No projectile damage when peace",
         "operation": "multiply_total",
         "value": -1.0
     }

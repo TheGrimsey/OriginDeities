@@ -1,6 +1,6 @@
 {
-	"name": "Lokin",
-	"description": "Deity of Trickery, Thieves, and Entertainers.",
+	"name": "origin.origin_deities.trickery.name",
+	"description": "origin.origin_deities.trickery.description",
 	"powers": [
 		"origins_deities:trickster_speed",
 		"origins_deities:tricksters_watch",
@@ -10,6 +10,5 @@
 	"icon": {
 		"item": "minecraft:black_dye"
 	},
-	"order": 1,
 	"impact": 1
 }

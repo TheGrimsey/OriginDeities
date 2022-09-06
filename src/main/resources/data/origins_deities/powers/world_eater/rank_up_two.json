@@ -1,0 +1,70 @@
+{
+  "name": "origin.origin_deities.world_eater.evolve.name",
+  "description": "power.origin_deities.unk.description",
+
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins_deities:world_eater/order",
+      "comparison": ">=",
+      "compare_to": 100
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "origin set @s origins_deities:god origins_deities:world_eater_three"
+        },
+        {
+          "type": "origins:spawn_particles",
+          "particle": {
+            "type": "minecraft:portal"
+          },
+          "count": 256,
+          "speed": 0.5,
+          "spread": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.enderman.teleport"
+        },
+        {
+          "type": "origins:apply_effect",
+          "effects": [
+            {
+              "effect": "minecraft:nausea",
+              "duration": 200,
+              "show_particles": false,
+              "show_icon": false
+            },
+            {
+              "effect": "minecraft:slowness",
+              "duration": 200,
+              "amplifier": 10,
+              "show_particles": false,
+              "show_icon": false
+            }
+          ]
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "tellraw @s {\"translate\":\"commands.message.display.incoming\",\"with\":[{\"translate\":\"origin.origin_deities.world_eater.evolve.name_whisper\",\"obfuscated\":true},{\"translate\":\"origin.origin_deities.world_eater.evolve_two.success\"}],\"italic\":true,\"color\":\"gray\"}"
+        }
+      ]
+    },
+    "else_action": {
+      "type": "origins:execute_command",
+      "command": "tellraw @s {\"translate\":\"commands.message.display.incoming\",\"with\":[{\"translate\":\"origin.origin_deities.world_eater.evolve.name_whisper\",\"obfuscated\":true},{\"translate\":\"origin.origin_deities.world_eater.evolve_two.failure\"}],\"italic\":true,\"color\":\"gray\"}"
+    }
+  },
+  "key": {
+    "key": "key.origins_deities.god_active"
+  }
+}

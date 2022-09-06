@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "feature": "minecraft:stronghold"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "feature": "betterstrongholds:stronghold"
+      }
+    }
+  ]
+}

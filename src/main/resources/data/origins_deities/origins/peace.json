@@ -1,9 +1,10 @@
 {
-	"name": "Harmon",
-	"description": "God of Peace and Diplomacy.",
+	"name": "origin.origin_deities.peace.name",
+	"description": "origin.origin_deities.peace.description",
 	"powers": [
 		"origins_deities:peace_of_mind",
 		"origins_deities:peace_of_mind_attack",
+		"origins_deities:peace_of_mind_attack_projectile",
 		"origins_deities:peace_prices",
 		"origins_deities:peace_diplomatic_vision",
 		"origins_deities:peace_glows/arcana",
@@ -13,11 +14,11 @@
 		"origins_deities:peace_glows/nature",
 		"origins_deities:peace_glows/peace",
 		"origins_deities:peace_glows/trickery",
-		"origins_deities:peace_glows/war"
+		"origins_deities:peace_glows/war",
+		"origins_deities:peace_glows/world_eater"
 	],
 	"icon": {
-		"item": "minecraft:writable_book"
+		"item": "minecraft:feather"
 	},
-	"order": 1,
 	"impact": 1
 }

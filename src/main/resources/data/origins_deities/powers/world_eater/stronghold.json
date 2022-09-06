@@ -1,0 +1,16 @@
+{
+  "type": "origins:conditioned_attribute",
+  "name": "Guardian of the Gate",
+  "description": "power.origin_deities.unk.description",
+  "modifier": {
+    "name": "WorldEaterHealthIncrease",
+    "attribute": "minecraft:generic.max_health",
+    "value": 20.0,
+    "operation": "addition"
+  },
+  "tick_rate": 200,
+  "condition": {
+    "type": "origins:predicate",
+    "predicate": "origins_deities:in_stronghold"
+  }
+}

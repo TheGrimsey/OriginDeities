@@ -1,6 +1,6 @@
 {
-	"name": "Pria",
-	"description": "Goddess of Life",
+	"name": "origin.origin_deities.life.name",
+	"description": "origin.origin_deities.life.description",
 	"powers": [
 		"origins_deities:life_point",
 		"origins_deities:life_healing_pots",
@@ -9,6 +9,5 @@
 	"icon": {
 		"item": "minecraft:enchanted_golden_apple"
 	},
-	"order": 1,
 	"impact": 1
 }
