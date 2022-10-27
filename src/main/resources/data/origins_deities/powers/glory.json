@@ -3,7 +3,7 @@
   "name": "Blessing of Glory",
   "description": "When killing hostile mobs you gain glory.",
   "min": 0,
-  "max": 20,
+  "max": 15,
   "hud_render": {
     "bar_index": 1,
     "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png"

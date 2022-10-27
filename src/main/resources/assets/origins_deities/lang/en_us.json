@@ -11,23 +11,23 @@
     "origin.origin_deities.life.name": "Pria",
     "origin.origin_deities.life.description": "Goddess of Life.",
 
-    "origin.origin_deities.light.name": "Hemer",
+    "origin.origin_deities.light.name": "Hemos",
     "origin.origin_deities.light.description": "God of Light.",
 
     "origin.origin_deities.nature.name": "Arthera",
     "origin.origin_deities.nature.description": "Goddess of Nature.",
 
-    "origin.origin_deities.peace.name": "Harmon",
+    "origin.origin_deities.peace.name": "Caelon",
     "origin.origin_deities.peace.description": "God of Peace and Diplomacy.",
 
     "origin.origin_deities.trickery.name": "Lokin",
-    "origin.origin_deities.trickery.description": "Deity of Trickery, Thieves, and Entertainers.",
+    "origin.origin_deities.trickery.description": "Deity of Stories, Mischief, and Entertainment.",
 
     "origin.origin_deities.war.name": "Arum",
     "origin.origin_deities.war.description": "God of Soldiers, War, and Glory.",
 
     "origin.origin_deities.world_eater.name": "The World-Eater",
-    "origin.origin_deities.world_eater.description": "The Mad Divine. The Draconic Deity of Destruction.",
+    "origin.origin_deities.world_eater.description": "The Mad Divine.\nThe Draconic Deity of Destruction.",
     "power.origin_deities.unk.description": "???",
 
     "origin.origin_deities.world_eater.evolve.name": "Evolve",
@@ -46,7 +46,7 @@
     "origin.origin_deities.world_eater.evolve_four.failure": "Not yet. Bring order. Find the Stronghold.",
 
     "origin.origin_deities.world_eater.veilwalker.name": "Veilwalker",
-    "origin.origin_deities.world_eater.veilwalker.description": "Consume order to become one with the World-Eater for a brief period.",
+    "origin.origin_deities.world_eater.veilwalker.description": "Consume order to become one with the World-Eater for a time.",
 
     "origin.origin_deities.world_eater.enemy_of_peace.name": "Enemy of Peace"
 }

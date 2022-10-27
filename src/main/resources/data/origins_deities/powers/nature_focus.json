@@ -2,7 +2,7 @@
     "hidden": true,
     "type": "origins:resource",
     "min": 0,
-    "max": 30,
+    "max": 50,
     "hud_render": {
       "bar_index": 8,
       "sprite_location": "origins:textures/gui/resource_bar.png"

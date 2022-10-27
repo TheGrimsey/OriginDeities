@@ -4,11 +4,8 @@
 	"powers": [
 		"origins_deities:nature_growth",
 		"origins_deities:nature_ranger",
-		"origins_deities:nature_root",
-		"origins_deities:nature_root_impl",
 		"origins_deities:nature_focus",
-		"origins_deities:nature_focus_regen",
-		"origins_deities:nature_root_overlay"
+		"origins_deities:nature_focus_regen"
 	],
 	"icon": {
 		"item": "minecraft:red_tulip"

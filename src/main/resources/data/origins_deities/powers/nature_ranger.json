@@ -1,6 +1,6 @@
 {
-  "name": "Blessing of the Ranger",
-  "description": "You deal more damage with ranged weaponry such as bows, crossbows, and potions.",
+  "name": "The Eternal Hunt",
+  "description": "You deal additional more damage with bows and crossbows.",
   "type": "origins:modify_projectile_damage",
   "modifier": {
       "name": "Extra damage when using bow or crossbow",

@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "name": "Hunter's Agility",
+  "description": "Whilst in the air you may jump an additional time.",
+  "modifier": {
+    "name": "HuntersAgilityJump",
+    "attribute": "doublejumpattribute:double_jump_attribute",
+    "value": 1.0,
+    "operation": "addition"
+  }
+}

@@ -1,11 +1,15 @@
 {
+    "name": "Coalescing Nature",
+    "description": "When in sunlight you charge up with the essence of nature.",
     "type": "origins:action_over_time",
-    "hidden": true,
     "entity_action": {
       "type": "origins:change_resource",
       "resource": "origins_deities:nature_focus",
       "change": 1,
       "operation": "add"
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
     },
     "interval": 20
   }

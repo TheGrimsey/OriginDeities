@@ -36,6 +36,7 @@ repositories {
     maven {
         url "https://maven.terraformersmc.com/"
     }
+    maven { url = "https://maven.willbl.dev/releases" }
 }
 
 dependencies {
@@ -48,6 +49,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+    modImplementation "amymialee:double-jump-attribute:1.0.8+1.19"
 }
 
 processResources {

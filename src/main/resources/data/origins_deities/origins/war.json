@@ -1,13 +1,13 @@
 {
-	"name": "Arum",
-	"description": "",
+	"name": "origin.origin_deities.war.name",
+	"description": "origin.origin_deities.war.description",
 	"powers": [
 		"origins_deities:glory",
 		"origins_deities:glory_gain",
 		"origins_deities:burst_of_glory"
 	],
 	"icon": {
-		"item": "minecraft:diamond_axe"
+		"item": "minecraft:netherite_axe"
 	},
 	"impact": 1
 }
