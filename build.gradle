@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version '1.0-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -48,7 +48,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
-	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+	//modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+    modImplementation "com.github.eggohito:origins-fabric:${project.origins_version}" // TO fix bug with additionalentityattributes. Can be removed for 1.19.3
     modImplementation "amymialee:double-jump-attribute:1.0.8+1.19"
 }
 

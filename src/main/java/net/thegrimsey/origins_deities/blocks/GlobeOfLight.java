@@ -20,7 +20,7 @@ public class GlobeOfLight extends Block {
     }
 
     @Override
-    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+    public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, net.minecraft.util.math.random.Random random) {
         if(!world.isClient) {
             world.setBlockState(pos, Blocks.AIR.getDefaultState());
         }
@@ -37,11 +37,11 @@ public class GlobeOfLight extends Block {
     }
 
     @Override
-    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, net.minecraft.util.math.random.Random random) {
     }
 
     @Override
-    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+    public void randomDisplayTick(BlockState state, World world, BlockPos pos, net.minecraft.util.math.random.Random random) {
         for(int i = 0; i < 2; i++) {
             world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.getX() + 0.5D + random.nextGaussian()/3.0D, pos.getY() + 0.5D + random.nextGaussian()/3.0D, pos.getZ() + 0.5D + random.nextGaussian()/3.0D, 0,0,0);
         }
