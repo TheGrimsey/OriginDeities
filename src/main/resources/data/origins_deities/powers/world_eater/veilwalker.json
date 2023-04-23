@@ -52,6 +52,10 @@
           "type": "origins:on_block"
         }
       ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins_deities:world_eater/veilwalker_toggle"
     }
   },
   "drain_order": {
