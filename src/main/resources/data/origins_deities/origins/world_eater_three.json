@@ -4,8 +4,8 @@
 	"powers": [
 		"origins_deities:world_eater/order",
 		"origins_deities:world_eater/order_gain",
-		"origins_deities:world_eater/enemy_of_peace",
-		"origins_deities:world_eater/stronghold"
+		"origins_deities:world_eater/stronghold",
+		"origins_deities:world_eater/veilwalker"
 	],
 	"icon": {
 		"item": "minecraft:dragon_egg"
