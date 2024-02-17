@@ -4,14 +4,16 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.block.Material;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.MapColor;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.item.BlockItem;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.thegrimsey.origins_deities.blocks.GlobeOfLight;
 import net.thegrimsey.origins_deities.entities.ThrownGlobeOfLightEntity;
 import net.thegrimsey.origins_deities.origins.EntityConditions;
@@ -24,7 +26,7 @@ public class OriginsDeities implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
 	public static final EntityType<ThrownGlobeOfLightEntity> THROWN_GLOBE_OF_LIGHT_ENTITY;
-	public static final GlobeOfLight GLOBE_OF_LIGHT = new GlobeOfLight(FabricBlockSettings.of(Material.GLASS).breakInstantly().noCollision().luminance(state -> 15).ticksRandomly().sounds(BlockSoundGroup.GLASS));
+	public static final GlobeOfLight GLOBE_OF_LIGHT = new GlobeOfLight(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).breakInstantly().noCollision().luminance(state -> 15).ticksRandomly().sounds(BlockSoundGroup.GLASS));
 	public static final BlockItem GLOBE_OF_LIGHT_ITEM = new BlockItem(GLOBE_OF_LIGHT, new FabricItemSettings());
 
 	@Override
@@ -32,9 +34,9 @@ public class OriginsDeities implements ModInitializer {
 		ItemConditions.register();
 		EntityConditions.register();
 
-		Registry.register(Registry.BLOCK, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT);
-		Registry.register(Registry.ITEM, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT_ITEM);
-		Registry.register(Registry.ENTITY_TYPE, new Identifier(MODID, "globe_of_light"), THROWN_GLOBE_OF_LIGHT_ENTITY);
+		Registry.register(Registries.BLOCK, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT);
+		Registry.register(Registries.ITEM, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT_ITEM);
+		Registry.register(Registries.ENTITY_TYPE, new Identifier(MODID, "globe_of_light"), THROWN_GLOBE_OF_LIGHT_ENTITY);
 
 	}
 

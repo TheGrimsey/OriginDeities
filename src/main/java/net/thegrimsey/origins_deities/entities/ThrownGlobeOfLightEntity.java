@@ -7,6 +7,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -30,15 +31,16 @@ public class ThrownGlobeOfLightEntity extends ThrownItemEntity {
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
 
-        if (!this.world.isClient && !this.isRemoved()) {
-            BlockPos blockPos = new BlockPos(hitResult.getPos());
 
-            if(this.world.isAir(blockPos)) {
-                this.world.setBlockState(blockPos, OriginsDeities.GLOBE_OF_LIGHT.getDefaultState());
+        if (this.getWorld() instanceof ServerWorld world && !this.isRemoved()) {
+            BlockPos blockPos = BlockPos.ofFloored(hitResult.getPos());
+
+            if(world.isAir(blockPos)) {
+                world.setBlockState(blockPos, OriginsDeities.GLOBE_OF_LIGHT.getDefaultState());
             } else {
-                BlockPos adjustedPos = new BlockPos(hitResult.getPos().subtract(this.getVelocity().multiply(0.5D)));
-                if(this.world.isAir(adjustedPos)) {
-                    this.world.setBlockState(adjustedPos, OriginsDeities.GLOBE_OF_LIGHT.getDefaultState());
+                BlockPos adjustedPos = BlockPos.ofFloored(hitResult.getPos().subtract(this.getVelocity().multiply(0.5D)));
+                if(world.isAir(adjustedPos)) {
+                    world.setBlockState(adjustedPos, OriginsDeities.GLOBE_OF_LIGHT.getDefaultState());
                 }
             }
 
@@ -60,8 +62,8 @@ public class ThrownGlobeOfLightEntity extends ThrownItemEntity {
     public void tick() {
         super.tick();
 
-        if(world.isClient()) {
-            this.world.addParticle(ParticleTypes.SOUL_FIRE_FLAME, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);
+        if(this.getWorld().isClient()) {
+            this.getWorld().addParticle(ParticleTypes.SOUL_FIRE_FLAME, this.getX(), this.getY(), this.getZ(), 0.0D, 0.0D, 0.0D);
         }
     }
 }
