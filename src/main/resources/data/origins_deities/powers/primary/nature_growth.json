@@ -1,0 +1,121 @@
+{
+  "type": "origins:active_self",
+  "name": "Coalescing Nature",
+  "description": "Whilst standing in sunlight, accumulate nature's essence. \nExpel the coalesced essence of nature from your form speeding up growth around you.",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:block_action_at",
+        "block_action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:bonemeal",
+              "effects": true
+            },
+            {
+              "type": "origins:offset",
+              "y": -1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": true
+              }
+            },
+            {
+              "type": "origins:offset",
+              "x": -1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "x": 1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "z": -1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "z": 1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "y": 1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": true
+              }
+            },
+            {
+              "type": "origins:offset",
+              "y": 1,
+              "x": -1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "y": 1,
+              "x": 1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "y": 1,
+              "z": -1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            },
+            {
+              "type": "origins:offset",
+              "y": 1,
+              "z": 1,
+              "action": {
+                "type": "origins:bonemeal",
+                "effects": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "origins_deities:primary/nature_focus",
+        "change": -10,
+        "operation": "add"
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins_deities:primary/nature_focus",
+    "comparison": ">=",
+    "compare_to": 10
+  },
+  "key": {
+    "key": "key.origins_deities.god_active"
+  }
+}

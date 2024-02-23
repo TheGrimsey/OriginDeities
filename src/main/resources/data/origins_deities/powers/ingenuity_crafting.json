@@ -1,7 +1,8 @@
 {
+  "hidden": true,
   "type": "origins:modify_crafting",
   "name": "Expend Ingenuity",
-  "description": "When you ingenuity bar is filled the output of the next recipe you craft will be increased by one (if the item can stack that high).",
+  "description": "When your ingenuity bar is filled the output of the next recipe you craft will be increased by one (if the item can stack that high).",
   "item_action": {
     "type": "origins:modify",
     "modifier": "origins_deities:increase_stack_count"

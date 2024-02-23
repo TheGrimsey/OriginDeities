@@ -1,0 +1,12 @@
+{
+	"name": "origin.origin_deities.hemos.name",
+	"description": "origin.origin_deities.hemos.description",
+	"powers": [
+		"origins_deities:primary/mote_of_light",
+		"origins_deities:primary/common_light"
+	],
+	"icon": {
+		"item": "origins_deities:globe_of_light"
+	},
+	"impact": 1
+}

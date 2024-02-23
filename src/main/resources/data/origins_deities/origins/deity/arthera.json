@@ -1,0 +1,13 @@
+{
+	"name": "origin.origin_deities.arthera.name",
+	"description": "origin.origin_deities.arthera.description",
+	"powers": [
+		"origins_deities:primary/nature_growth",
+		"origins_deities:primary/nature_focus",
+		"origins_deities:primary/nature_focus_regen"
+	],
+	"icon": {
+		"item": "minecraft:red_tulip"
+	},
+	"impact": 1
+}

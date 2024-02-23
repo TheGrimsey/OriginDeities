@@ -1,0 +1,11 @@
+{
+	"name": "origin.origin_deities.lokin.name",
+	"description": "origin.origin_deities.lokin.description",
+	"powers": [
+
+	],
+	"icon": {
+		"item": "minecraft:black_dye"
+	},
+	"impact": 1
+}

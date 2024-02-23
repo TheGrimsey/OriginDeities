@@ -12,6 +12,10 @@ group = project.maven_group
 
 repositories {
     maven {
+        name = "Pug's Maven"
+        url = 'https://maven.merchantpug.net/releases/'
+    }
+    maven {
         name = "Ladysnake Libs"
         url = 'https://maven.ladysnake.org/releases'
     }
@@ -37,6 +41,14 @@ repositories {
         url "https://maven.terraformersmc.com/"
     }
     maven { url = "https://maven.willbl.dev/releases" }
+
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 dependencies {
@@ -50,6 +62,7 @@ dependencies {
 	
 	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
     modImplementation "com.github.apace100:apoli:${project.apoli_version}"
+    modImplementation "net.merchantpug:Apugli:${project.apugli_version}-fabric"
 }
 
 processResources {

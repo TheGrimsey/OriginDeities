@@ -1,0 +1,12 @@
+{
+	"name": "origin.origin_deities.moern.name",
+	"description": "origin.origin_deities.moern.description",
+	"powers": [
+		"origins_deities:primary/graves",
+		"origins_deities:primary/detect_undead"
+	],
+	"icon": {
+		"item": "minecraft:red_tulip"
+	},
+	"impact": 1
+}

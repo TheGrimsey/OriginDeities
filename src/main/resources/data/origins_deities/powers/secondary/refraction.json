@@ -1,0 +1,72 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "invisibility_duration": {
+    "type": "origins:modify_status_effect_duration",
+    "hidden": true,
+    "status_effect": "minecraft:invisibility",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 0.50
+    }
+  },
+  "hide_armor": {
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "condition": {
+      "type": "origins:status_effect",
+      "effect": "minecraft:invisibility"
+    }
+  },
+  "hide_from_mobs": {
+    "type": "apugli:mobs_ignore",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:status_effect",
+          "effect": "minecraft:invisibility"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "*:*_attack_resource",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "attack_resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3
+  },
+  "modify_resource_on_attack": {
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_attack_resource",
+        "change": 3,
+        "operation": "set"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins_deities:is_hostile"
+      }
+    }
+  },
+  "decrease_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_attack_resource",
+      "change": -1
+    },
+    "interval": 40
+  }
+}

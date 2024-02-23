@@ -1,0 +1,257 @@
+{
+    "replace": false,
+    "order": 10,
+    "enabled": true,
+    "name": "Divine Aspect",
+
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/aranuo"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/tyra"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/charged"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arthera"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/pria"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/companion"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/pria"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arum"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/condition"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arthera"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/lokin"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/grace"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/pria"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/caelon"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/aranuo"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/homebound"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/aranuo"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/alai"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/knowledge"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arum"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/tyra"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/rage"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/lokin"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/hemos"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/refraction"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/lokin"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arthera"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/shadows"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/moern"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/tyra"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/soulward"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arthera"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arum"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/the_hunt"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/tyra"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/lokin"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/wanderer"
+            ]
+        }
+    ],
+    "allow_random": true,
+    "allow_random_unchoosable": false,
+    "hidden": false
+  }

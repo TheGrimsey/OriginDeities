@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "hidden": true,
+  "modifier": {
+    "name": "KnowledgeXpDrops",
+    "attribute": "additionalentityattributes:dropped_experience",
+    "value": 1.0,
+    "operation": "addition"
+  }
+}

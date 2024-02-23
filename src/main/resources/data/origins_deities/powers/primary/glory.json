@@ -1,0 +1,94 @@
+{
+  "type": "origins:resource",
+  "name": "Burst of Glory",
+  "description": "Taking or dealing damage to hostile mobs or players fills up your glory bar, when it is filled you expel a burst from your form, granting Strength & Regeneration to allies & yourself.",
+  "min": 0,
+  "max": 90,
+  "hud_render": {
+    "bar_index": 1,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png"
+  },
+  "max_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:area_of_effect",
+        "radius": 8,
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:apply_effect",
+            "effects": [
+              {
+                "effect": "minecraft:regeneration",
+                "amplifier": 2,
+                "duration": 300
+              },
+              {
+                "effect": "minecraft:strength",
+                "amplifier": 2,
+                "duration": 200
+              }
+            ]
+          }
+        },
+        "bientity_condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:can_see"
+            },
+            {
+              "type": "origins:target_condition",
+              "condition": {
+                "type": "origins_deities:is_hostile",
+                "inverted": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:apply_effect",
+            "effects": [
+              {
+                "effect": "minecraft:regeneration",
+                "amplifier": 1,
+                "duration": 150
+              },
+              {
+                "effect": "minecraft:strength",
+                "amplifier": 1,
+                "duration": 100
+              }
+            ]
+          },
+          {
+            "type": "origins:spawn_particles",
+            "particle": {
+              "type": "minecraft:crit",
+              "params": "minecraft:redstone_block"
+            },
+            "count": 64,
+            "speed": 0.0,
+            "force": true,
+            "spread": {
+              "x": 3.0,
+              "y": 0.0,
+              "z": 3.0
+            }
+          },
+          {
+            "type": "origins:change_resource",
+            "resource": "origins_deities:primary/glory",
+            "change": 0,
+            "operation": "set"
+          }
+        ]
+      }
+    ]
+  }
+}

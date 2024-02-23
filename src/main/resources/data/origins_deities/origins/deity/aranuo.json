@@ -1,0 +1,10 @@
+{
+	"name": "origin.origin_deities.aranuo.name",
+	"description": "origin.origin_deities.aranuo.description",
+	"powers": [
+	],
+	"icon": {
+		"item": "minecraft:enchanted_book"
+	},
+	"impact": 1
+}

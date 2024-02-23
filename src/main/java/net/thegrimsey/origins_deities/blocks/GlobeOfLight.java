@@ -4,7 +4,13 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.block.entity.BeaconBlockEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
@@ -29,7 +35,19 @@ public class GlobeOfLight extends Block {
 
     @Override
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
-        world.scheduleBlockTick(pos, this, 2000); // Scheduled tick for removal
+        world.scheduleBlockTick(pos, this, 1200); // Scheduled tick for removal
+    }
+
+    @Override
+    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        super.onEntityCollision(state, world, pos, entity);
+
+        if(entity instanceof LivingEntity livingEntity && !(entity instanceof HostileEntity)) {
+            world.setBlockState(pos, Blocks.AIR.getDefaultState());
+
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 400));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 250));
+        }
     }
 
     @Override

@@ -1,0 +1,11 @@
+{
+	"name": "Rage",
+	"description": "After killing a hostile entity you become enraged for 20s.\n\nWhile enraged you deal an additional heart of damage and take one heart less damage.\n\nUpon expiration you gain weakness & slowness for 10s.",
+	"powers": [
+		"origins_deities:secondary/rage"
+	],
+	"icon": {
+		"item": "minecraft:redstone"
+	},
+	"impact": 1
+}

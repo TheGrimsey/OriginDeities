@@ -1,9 +1,0 @@
-{
-    "name": "Trickster's Watch",
-    "description": "You can see the outlines of all nearby entities.",
-    "type": "origins:toggle",
-    "active_by_default": true,
-    "key": {
-        "key": "key.origins_deities.god_active"
-    }
-}

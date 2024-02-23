@@ -1,0 +1,12 @@
+{
+	"name": "origin.origin_deities.caelon.name",
+	"description": "origin.origin_deities.caelon.description",
+	"powers": [
+		"origins_deities:primary/agent_of_peace",
+		"origins_deities:primary/diplomatic_eyes"
+	],
+	"icon": {
+		"item": "minecraft:feather"
+	},
+	"impact": 1
+}

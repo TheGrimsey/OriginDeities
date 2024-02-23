@@ -2,45 +2,33 @@
     "block.origins_deities.globe_of_light": "Mote of Light",
     "key.origins_deities.god_active": "Deity Power",
 
-    "origin.origin_deities.arcana.name": "Aranuo",
-    "origin.origin_deities.arcana.description": "God of Knowledge & Magic.",
+    "origin.origin_deities.alai.name": "Alai",
+    "origin.origin_deities.alai.description": "Goddess of Ingenuity",
 
-    "origin.origin_deities.ingenuity.name": "Alai",
-    "origin.origin_deities.ingenuity.description": "Goddess of Ingenuity & Artisans.",
+    "origin.origin_deities.aranuo.name": "Aranuo",
+    "origin.origin_deities.aranuo.description": "Lord of Arcana",
 
-    "origin.origin_deities.life.name": "Pria",
-    "origin.origin_deities.life.description": "Goddess of Life.",
+    "origin.origin_deities.arthera.name": "Arthera",
+    "origin.origin_deities.arthera.description": "Warden of Nature",
 
-    "origin.origin_deities.light.name": "Hemos",
-    "origin.origin_deities.light.description": "God of Light.",
+    "origin.origin_deities.arum.name": "Arum",
+    "origin.origin_deities.arum.description": "God of Soldiers, War, and Glory",
 
-    "origin.origin_deities.nature.name": "Arthera",
-    "origin.origin_deities.nature.description": "Goddess of Nature.",
+    "origin.origin_deities.caelon.name": "Caelon",
+    "origin.origin_deities.caelon.description": "Bringer of Peace",
 
-    "origin.origin_deities.peace.name": "Caelon",
-    "origin.origin_deities.peace.description": "God of Peace and Diplomacy.",
+    "origin.origin_deities.hemos.name": "Hemos",
+    "origin.origin_deities.hemos.description": "Herald of Light",
 
-    "origin.origin_deities.trickery.name": "Lokin",
-    "origin.origin_deities.trickery.description": "Deity of Stories, Mischief, and Entertainment.",
+    "origin.origin_deities.lokin.name": "Lokin",
+    "origin.origin_deities.lokin.description": "Deity of Stories",
 
-    "origin.origin_deities.war.name": "Arum",
-    "origin.origin_deities.war.description": "God of Soldiers, War, and Glory.",
+    "origin.origin_deities.moern.name": "Moern",
+    "origin.origin_deities.moern.description": "Lord of Graves",
 
-    "origin.origin_deities.world_eater.name": "The World-Eater",
-    "origin.origin_deities.world_eater.description": "The Mad Divine.\nThe Draconic Deity of Destruction.",
-    "power.origin_deities.unk.description": "???",
+    "origin.origin_deities.pria.name": "Pria",
+    "origin.origin_deities.pria.description": "Goddess of Life",
 
-    "origin.origin_deities.world_eater.evolve.name": "Evolve",
-    "origin.origin_deities.world_eater.evolve.name_whisper": "World-Eater",
-
-    "origin.origin_deities.world_eater.evolve.success": "You have served well. Go on now, bring order in my name. Seek out the Stronghold.",
-    "origin.origin_deities.world_eater.evolve.failure": "You aren't ready yet... Bring order.",
-
-    "origin.origin_deities.world_eater.evolve_two.success": "Defend this place, here you shall be unbreakable.",
-    "origin.origin_deities.world_eater.evolve_two.failure": "Not yet. Bring order. Find the Stronghold.",
-
-    "origin.origin_deities.world_eater.veilwalker.name": "Veilwalker",
-    "origin.origin_deities.world_eater.veilwalker.description": "Consume order to become one with the World-Eater for a time.",
-
-    "origin.origin_deities.world_eater.enemy_of_peace.name": "Enemy of Peace"
+    "origin.origin_deities.tyra.name": "Tyra",
+    "origin.origin_deities.tyra.description": "Goddess of Storms"
 }

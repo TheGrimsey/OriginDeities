@@ -1,0 +1,11 @@
+{
+	"name": "origin.origin_deities.pria.name",
+	"description": "origin.origin_deities.pria.description",
+	"powers": [
+		"origins_deities:primary/blessing_of_sacrifice"
+	],
+	"icon": {
+		"item": "minecraft:enchanted_golden_apple"
+	},
+	"impact": 1
+}

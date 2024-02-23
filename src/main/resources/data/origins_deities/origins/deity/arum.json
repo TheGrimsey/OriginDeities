@@ -1,0 +1,12 @@
+{
+	"name": "origin.origin_deities.arum.name",
+	"description": "origin.origin_deities.arum.description",
+	"powers": [
+		"origins_deities:primary/glory",
+		"origins_deities:primary/glory_gain"
+	],
+	"icon": {
+		"item": "minecraft:netherite_sword"
+	},
+	"impact": 1
+}

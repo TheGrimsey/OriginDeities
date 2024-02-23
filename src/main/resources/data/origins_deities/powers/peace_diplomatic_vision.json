@@ -1,9 +1,0 @@
-{
-    "name": "Diplomatic Vision",
-    "description": "You can tell which deity any other player follows by their outline.",
-    "type": "origins:toggle",
-    "active_by_default": true,
-    "key": {
-        "key": "key.origins_deities.god_active"
-    }
-}

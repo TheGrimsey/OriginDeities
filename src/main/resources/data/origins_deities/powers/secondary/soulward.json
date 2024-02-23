@@ -1,0 +1,39 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "soulward": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 10,
+    "hud_render": {
+      "bar_index": 8,
+      "sprite_location": "origins:textures/gui/resource_bar.png"
+    }
+  },
+  "collect_souls": {
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_soulward",
+      "change": 1,
+      "operation": "add"
+    },
+    "target_condition": {
+      "type": "origins_deities:is_hostile"
+    },
+    "cooldown": 0
+  },
+  "consume_souls": {
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_soulward",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+	"name": "origin.origin_deities.tyra.name",
+	"description": "origin.origin_deities.tyra.description",
+	"powers": [
+		"origins_deities:primary/eye_of_the_storm"
+	],
+	"icon": {
+		"item": "minecraft:red_tulip"
+	},
+	"impact": 1
+}

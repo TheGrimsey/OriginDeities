@@ -1,0 +1,52 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "damage_taken": {
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_deities:primary/glory",
+      "change": 2,
+      "operation": "add"
+    },
+    "damage_condition": {
+      "type": "origins:attacker",
+      "entity_condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins_deities:is_hostile"
+          },
+          {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:player"
+          }
+        ]
+      }
+    },
+    "cooldown": 5
+  },
+  "damage_dealt": {
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_deities:primary/glory",
+      "change": 1,
+      "operation": "add"
+    },
+    "target_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins_deities:is_hostile"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:player"
+        }
+      ]
+    },
+    "cooldown": 10
+  }
+}

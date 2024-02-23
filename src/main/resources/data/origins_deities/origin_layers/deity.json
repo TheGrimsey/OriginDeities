@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "order": 4,
+    "enabled": true,
+    "name": "deity",
+
+    "origins": [
+      "origins_deities:deity/alai",
+      "origins_deities:deity/aranuo",
+      "origins_deities:deity/arthera",
+      "origins_deities:deity/arum",
+      "origins_deities:deity/caelon",
+      "origins_deities:deity/hemos",
+      "origins_deities:deity/lokin",
+      "origins_deities:deity/moern",
+      "origins_deities:deity/pria",
+      "origins_deities:deity/tyra"
+    ],
+    "allow_random": true,
+    "allow_random_unchoosable": false,
+    "hidden": false
+  }

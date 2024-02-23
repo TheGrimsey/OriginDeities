@@ -1,0 +1,11 @@
+{
+	"name": "Condition",
+	"description": "Your max health is increased by 6 hearts.",
+	"powers": [
+		"origins_deities:secondary/condition"
+	],
+	"icon": {
+		"item": "minecraft:bread"
+	},
+	"impact": 0
+}

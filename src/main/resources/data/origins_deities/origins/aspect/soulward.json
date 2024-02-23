@@ -1,0 +1,11 @@
+{
+	"name": "Soul",
+	"description": "Killing hostile creatures fills up your soulward. Upon falling beneath 10% health, the soulward is consumed to heal one hearth per soul.\nYour soulward holds up to 10 souls.",
+	"powers": [
+		"origins_deities:secondary/soulward"
+	],
+	"icon": {
+		"item": "minecraft:glass"
+	},
+	"impact": 1
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Detect Undead",
+  "description": "Undead within 64 blocks of you are marked with an outline.",
+  "type": "origins:multiple",
+
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": true,
+    "key": {
+      "key": "key.origins_deities.god_active"
+    }
+  },
+  "vision": {
+    "type": "origins:entity_glow",
+    "use_teams": false,
+    "red": 0.8,
+    "green": 0.0,
+    "blue": 0.0,
+    "bientity_condition": {
+      "type": "origins:distance",
+      "comparison": "<=",
+      "compare_to": 64
+    },
+    "entity_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:entity_group",
+          "group": "undead"
+        },
+        {
+          "type": "origins:origin",
+          "origin": "haema:vampire"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  }
+}

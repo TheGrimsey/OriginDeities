@@ -1,0 +1,11 @@
+{
+	"name": "Companion",
+	"description": "You can't directly hurt your pets.\n\nWhen one of your pets takes damage, instantly restore 3 hearts to it (once every 3 seconds)\n\nAdditionally, your pets deal an additional heart of magic damage.",
+	"powers": [
+		"origins_deities:secondary/companion"
+	],
+	"icon": {
+		"item": "minecraft:bone"
+	},
+	"impact": 0
+}

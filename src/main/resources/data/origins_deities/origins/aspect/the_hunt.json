@@ -1,0 +1,11 @@
+{
+	"name": "Hunt",
+	"description": "You deal an additional heart of damage with bows and crossbows.",
+	"powers": [
+		"origins_deities:secondary/the_hunt"
+	],
+	"icon": {
+		"item": "minecraft:bow"
+	},
+	"impact": 1
+}

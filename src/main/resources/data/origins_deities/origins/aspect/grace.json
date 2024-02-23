@@ -1,0 +1,11 @@
+{
+	"name": "Grace",
+	"description": "Whilst in the air you may jump an additional time.",
+	"powers": [
+		"origins_deities:secondary/grace"
+	],
+	"icon": {
+		"item": "minecraft:feather"
+	},
+	"impact": 0
+}

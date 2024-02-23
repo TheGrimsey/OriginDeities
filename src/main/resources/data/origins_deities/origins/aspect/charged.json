@@ -1,0 +1,11 @@
+{
+	"name": "Charged",
+	"description": "When struck by lighting gain 7 charges. When charged you move & attack 10% faster.\n\nIf struck when charged, your attacker will take 3 hearts of damage, consuming a charge.\n\nYou do not take damage from lightning bolts.",
+	"powers": [
+		"origins_deities:secondary/charged"
+	],
+	"icon": {
+		"item": "minecraft:lightning_rod"
+	},
+	"impact": 0
+}

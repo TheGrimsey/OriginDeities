@@ -1,0 +1,98 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "enrage_on_kill": {
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_rage_timer",
+      "change": 20
+    },
+    "target_condition": {
+      "type": "origins_deities:is_hostile"
+    }
+  },
+  "rage_timer": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 20,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/community/huang/resource_bar_01.png",
+      "bar_index": 17
+    },
+    "min_action": {
+      "type": "origins:apply_effect",
+      "effects": [
+        {
+          "effect": "minecraft:weakness",
+          "duration": 200,
+          "amplifier": 0
+        },
+        {
+          "effect": "minecraft:slowness",
+          "duration": 200,
+          "amplifier": 0
+        }
+      ]
+    }
+  },
+  "rage_decay": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_rage_timer",
+      "change": -1
+    },
+    "interval": 20
+  },
+  "is_raging": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_rage_timer",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+
+  "rage_damage_dealt": {
+    "type": "origins:modify_damage_dealt",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_is_raging"
+    },
+    "modifier": {
+      "name": "rage_dealt_damage",
+      "operation": "addition",
+      "value": 2
+    }
+  },
+  "rage_damage_taken": {
+    "type": "origins:modify_damage_taken",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_is_raging"
+    },
+    "modifier": {
+      "name": "rage_taken_damage",
+      "operation": "addition",
+      "value": -2
+    }
+  },
+  "rage_size": {
+    "type": "apugli:modify_scale",
+    "delay": 40,
+    "scale_types": [
+      "pehkui:base"
+    ],
+    "modifiers": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.1
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_is_raging"
+    }
+  }
+}

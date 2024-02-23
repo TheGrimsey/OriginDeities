@@ -1,0 +1,23 @@
+{
+  "name": "Morugarde",
+  "description": "You deal two additional hearts of damage to undead",
+  "type": "origins:modify_damage_dealt",
+  "target_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:entity_group",
+        "group": "undead"
+      },
+      {
+        "type": "origins:origin",
+        "origin": "haema:vampire"
+      }
+    ]
+  },
+  "modifier": {
+    "name": "EyeOfTheStormDamage",
+    "operation": "addition",
+    "value": 4.0
+  }
+}

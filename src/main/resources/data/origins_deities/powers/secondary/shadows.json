@@ -1,0 +1,70 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:in_block",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:grass"
+          }
+        },
+        {
+          "type": "origins:in_block",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:tall_grass"
+          }
+        },
+        {
+          "type": "origins:in_block",
+          "block_condition": {
+            "type": "origins:light_level",
+            "comparison": "<",
+            "compare_to": 8
+          }
+        }
+      ]
+    }
+  },
+  "speed": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 30,
+    "modifier": {
+      "name": "TrickerySpeed",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.2,
+      "operation": "multiply_total"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "sight": {
+    "type": "origins:entity_glow",
+    "use_teams": false,
+    "red": 0.2,
+    "green": 0.2,
+    "blue": 0.2,
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:distance",
+          "comparison": "<=",
+          "compare_to": 32
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  }
+}

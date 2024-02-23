@@ -1,0 +1,11 @@
+{
+	"name": "Refraction",
+	"description": "Invisibility effects lasts 50% longer and hide your armor.\nWhile invisible & wearing armor, hostile mobs ignore you as if you weren't wearing armor.",
+	"powers": [
+		"origins_deities:secondary/refraction"
+	],
+	"icon": {
+		"item": "minecraft:glass"
+	},
+	"impact": 0
+}

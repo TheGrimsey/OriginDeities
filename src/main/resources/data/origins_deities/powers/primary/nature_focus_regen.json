@@ -1,0 +1,14 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins_deities:primary/nature_focus",
+      "change": 1,
+      "operation": "add"
+    },
+    "condition": {
+      "type": "origins:exposed_to_sun"
+    },
+    "interval": 20
+}

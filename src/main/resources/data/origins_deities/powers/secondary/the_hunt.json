@@ -1,0 +1,9 @@
+{
+  "hidden": true,
+  "type": "origins:modify_projectile_damage",
+  "modifier": {
+      "name": "Extra damage when using bow or crossbow",
+      "operation": "addition",
+      "value": 2.0
+  }
+}

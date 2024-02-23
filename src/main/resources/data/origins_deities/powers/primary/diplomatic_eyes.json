@@ -1,0 +1,283 @@
+{
+    "name": "Diplomatic Eyes",
+    "description": "The deity of other players is revealed to you.",
+    "type": "origins:multiple",
+
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins_deities.god_active"
+        }
+    },
+    "alai": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0,
+        "green": 1,
+        "blue": 1,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/alai"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "aranuo": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0.6,
+        "green": 0.62,
+        "blue": 1,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/aranuo"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:toggle"
+        }
+    },
+    "arthera": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0.1,
+        "green": 0.5,
+        "blue": 0.1,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arthera"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "arum": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arum"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "caelon": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 1,
+        "blue": 1,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/caelon"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "hemos": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0.78,
+        "green": 0.75,
+        "blue": 0.733,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/hemos"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "lokin": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0.2,
+        "green": 0.2,
+        "blue": 0.2,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/lokin"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "moern": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0.753,
+        "green": 0.753,
+        "blue": 0.753,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/moern"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "pria": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0.843,
+        "blue": 0,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/pria"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "tyra": {
+        "type": "origins:entity_glow",
+        "use_teams": false,
+        "red": 0,
+        "green": 0,
+        "blue": 0.545,
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/tyra"
+                    }
+                },
+                {
+                    "type": "origins:can_see"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}

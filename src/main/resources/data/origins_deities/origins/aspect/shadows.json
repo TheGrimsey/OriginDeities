@@ -1,0 +1,11 @@
+{
+	"name": "Shadows",
+	"description": "When enshrouded in darkness or tall grass you move 20% faster and can see the outline of mobs within 32 blocks.",
+	"powers": [
+		"origins_deities:secondary/shadows"
+	],
+	"icon": {
+		"item": "minecraft:tinted_glass"
+	},
+	"impact": 0
+}

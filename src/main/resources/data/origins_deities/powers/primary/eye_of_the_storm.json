@@ -1,0 +1,64 @@
+{
+  "name": "Eye of the Storm",
+  "description": "Whilst in rain or water, you deal two additional hearts of damage and move 15% faster.",
+  "type": "origins:multiple",
+
+  "cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:in_rain"
+        },
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+
+  "modify_damage": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "name": "EyeOfTheStormDamage",
+      "operation": "addition",
+      "value": 4.0
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "modify_swim_speed": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "additionalentityattributes:water_speed",
+      "operation": "multiply_base",
+      "value": 1.15,
+      "name": "EOTS Increase swim speed"
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "modify_speed": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "addition",
+      "value": 0.15,
+      "name": "EOTS Increase speed"
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  }
+}

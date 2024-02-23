@@ -1,0 +1,13 @@
+{
+	"name": "origin.origin_deities.alai.name",
+	"description": "origin.origin_deities.alai.description",
+	"powers": [
+		"origins_deities:ingenuity",
+		"origins_deities:ingenuity_gain",
+		"origins_deities:ingenuity_crafting"
+	],
+	"icon": {
+		"item": "minecraft:crafting_table"
+	},
+	"impact": 1
+}

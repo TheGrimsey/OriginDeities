@@ -1,0 +1,58 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "heal_pet": {
+    "type": "apugli:action_when_tame_hit",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:heal",
+            "amount": 6
+          },
+          {
+            "type": "origins:spawn_particles",
+            "particle": {
+              "type": "minecraft:heart"
+            },
+            "count": 2,
+            "speed": 0.1,
+            "force": true,
+            "spread": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        ]
+      }
+    },
+    "cooldown": 60,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 4
+    }
+  },
+  "no_hurt_own_pet": {
+    "type": "origins:modify_damage_dealt",
+    "bientity_condition": {
+      "type": "origins:owner"
+    },
+    "modifier": {
+      "name": "NoDamageToOwnPet",
+      "operation": "set_total",
+      "value": 0.0
+    }
+  },
+  "pet_extra_damage": {
+    "type": "apugli:action_on_tame_hit",
+    "bientity_action": {
+      "type": "origins:damage",
+      "amount": 2,
+      "damage_type": "minecraft:magic"
+    }
+  }
+}

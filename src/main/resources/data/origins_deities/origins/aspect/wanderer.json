@@ -1,0 +1,11 @@
+{
+	"name": "Wander",
+	"description": "When further than 64 blocks from your spawn point, your max health is increased by 3 hearts & you accumulate 50% less exhaustion.\nThese effects are inverted when within this distance.",
+	"powers": [
+		"origins_deities:secondary/wanderer"
+	],
+	"icon": {
+		"item": "minecraft:bow"
+	},
+	"impact": 2
+}

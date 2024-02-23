@@ -1,0 +1,141 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "on_lightning_strike": {
+    "type": "apugli:action_when_lightning_struck",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_charged_resource",
+      "change": 7
+    }
+  },
+  "ignore_lighting_damage": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_lightning"
+    },
+    "modifier": {
+      "name": "IgnoreLightningDamage",
+      "operation": "multiply_total",
+      "value": -1.0
+    }
+  },
+  "charged_resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 7,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+      "bar_index": 1
+    }
+  },
+
+  "constant_speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "name": "LightningSpeed",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.05,
+      "operation": "multiply_base"
+    }
+  },
+
+  "cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_charged_resource",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "charged_swirl": {
+    "type": "apugli:energy_swirl",
+    "texture_location": "minecraft:textures/entity/creeper/creeper_armor.png",
+    "speed": 0.005,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "charged_speed": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_base",
+      "value": 0.1,
+      "name": "ChargedSpeed"
+    },
+    "tick_rate": 40,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "charged_attack_speed": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.attack_speed",
+      "operation": "multiply_base",
+      "value": 0.1,
+      "name": "ChargedAttackSpeed"
+    },
+    "tick_rate": 40,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "charged_when_hit": {
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:invert",
+          "action": {
+            "type": "origins:damage",
+            "amount": 6,
+            "damage_type": "minecraft:lightning_bolt"
+          }
+        },
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_charged_resource",
+            "change": -1
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:spawn_particles",
+            "particle": {
+              "type": "minecraft:electric_spark"
+            },
+            "count": 32,
+            "speed": 0.0,
+            "force": false,
+            "spread": {
+              "x": 0.5,
+              "y": 2.0,
+              "z": 0.5
+            }
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.lightning_bolt.thunder",
+            "volume": 1.0,
+            "pitch": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

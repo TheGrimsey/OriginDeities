@@ -1,0 +1,21 @@
+{
+    "name": "Agent of Peace",
+    "description": "You take & deal 40% less damage from all sources.",
+    "type": "origins:multiple",
+    "take_less": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "name": "agent_of_peace_take",
+            "operation": "multiply_total",
+            "value": -0.4
+        }
+    },
+    "deal_less": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "agent_of_peace_deal",
+            "operation": "multiply_total",
+            "value": -0.4
+        }
+    }
+}

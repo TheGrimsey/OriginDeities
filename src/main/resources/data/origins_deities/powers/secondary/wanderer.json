@@ -1,0 +1,66 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins_deities:within_distance_of_spawn",
+      "distance": 64,
+      "inverted": true
+    }
+  },
+  "gain_health": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "value": 6.0,
+      "operation": "addition",
+      "name": "HomeboundHealth"
+    },
+    "tick_rate": 40,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "lose_health": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "value": -6.0,
+      "operation": "addition",
+      "name": "HomeboundHealth"
+    },
+    "tick_rate": 40,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "decreased_exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "name": "Increased exhaustion",
+      "operation": "multiply_base",
+      "value": 0.5
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "increased_exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "name": "Increased exhaustion",
+      "operation": "multiply_base",
+      "value": 1.5
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond",
+      "inverted": true
+    }
+  }
+}
