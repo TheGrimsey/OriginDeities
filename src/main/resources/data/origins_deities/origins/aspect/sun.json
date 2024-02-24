@@ -1,0 +1,11 @@
+{
+	"name": "Sun",
+	"description": "While exposed to sunlight, you have a greatly increased chance for rare loot to drop and can break blocks 10% faster.",
+	"powers": [
+		"origins_deities:secondary/sun"
+	],
+	"icon": {
+		"item": "minecraft:sunflower"
+	},
+	"impact": 0
+}

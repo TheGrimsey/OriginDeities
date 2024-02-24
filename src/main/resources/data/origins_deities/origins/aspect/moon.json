@@ -1,0 +1,11 @@
+{
+	"name": "Moon",
+	"description": "Your strength waxes & wanes with the moon.\n\nDepending on the phase of the moon:\n- Your health is increased by 4/3/2/0/-1 hearts.\n-Your magic damage taken is decreased by 4/2/1/0/-1.\n-Your experience gained is increased by 2/1/0.5/0/-1.",
+	"powers": [
+		"origins_deities:secondary/moon"
+	],
+	"icon": {
+		"item": "minecraft:sea_lantern"
+	},
+	"impact": 1
+}

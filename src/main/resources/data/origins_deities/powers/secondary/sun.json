@@ -1,0 +1,45 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:in_block",
+      "block_condition": {
+        "type": "origins:light_level",
+        "light_type": "sky",
+        "comparison": ">=",
+        "compare_to": 11
+      }
+    }
+  },
+  "bonus_loot": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 40,
+    "modifier": {
+      "name": "SunRareLootChance",
+      "attribute": "additionalentityattributes:bonus_rare_loot_rolls",
+      "value": 2.0,
+      "operation": "addition"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "dig_speed": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 40,
+    "modifier": {
+      "name": "SunRareLootChance",
+      "attribute": "additionalentityattributes:dig_speed",
+      "value": 0.1,
+      "operation": "multiply_total"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  }
+}

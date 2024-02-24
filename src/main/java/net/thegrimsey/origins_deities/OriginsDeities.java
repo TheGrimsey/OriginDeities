@@ -41,6 +41,6 @@ public class OriginsDeities implements ModInitializer {
 	}
 
 	static {
-		THROWN_GLOBE_OF_LIGHT_ENTITY = FabricEntityTypeBuilder.<ThrownGlobeOfLightEntity>create(SpawnGroup.MISC, ThrownGlobeOfLightEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackable(64, 10, true).build();
+		THROWN_GLOBE_OF_LIGHT_ENTITY = FabricEntityTypeBuilder.<ThrownGlobeOfLightEntity>create(SpawnGroup.MISC, ThrownGlobeOfLightEntity::new).dimensions(EntityDimensions.fixed(0.25f, 0.25f)).trackRangeChunks(4).trackedUpdateRate(2).build();
 	}
 }

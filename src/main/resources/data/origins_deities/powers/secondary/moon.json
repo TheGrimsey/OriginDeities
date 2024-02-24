@@ -1,0 +1,266 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+
+  "full_moon_cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins_deities:moon_in_phase",
+      "phase": 0
+    }
+  },
+  "gibbous_cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins_deities:moon_in_phase",
+          "phase": 1
+        },
+        {
+          "type": "origins_deities:moon_in_phase",
+          "phase": 7
+        }
+      ]
+    }
+  },
+  "quarter_cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins_deities:moon_in_phase",
+          "phase": 2
+        },
+        {
+          "type": "origins_deities:moon_in_phase",
+          "phase": 6
+        }
+      ]
+    }
+  },
+  "crescent_cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins_deities:moon_in_phase",
+          "phase": 3
+        },
+        {
+          "type": "origins_deities:moon_in_phase",
+          "phase": 5
+        }
+      ]
+    }
+  },
+  "new_cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins_deities:moon_in_phase",
+      "phase": 4
+    }
+  },
+
+  "full_attributes": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_full_cond"
+    },
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "value": 8.0,
+        "operation": "addition",
+        "name": "MoonHealth"
+      },
+      {
+        "attribute": "additionalentityattributes:magic_protection",
+        "operation": "addition",
+        "value": 4.0,
+        "name": "FullMoonMagicProtection"
+      },
+      {
+        "attribute": "additionalentityattributes:dropped_experience",
+        "operation": "addition",
+        "value": 2.0,
+        "name": "FullMoonExperience"
+      }
+    ]
+  },
+  "full_size": {
+    "type": "apugli:modify_scale",
+    "delay": 40,
+    "scale_types": [
+      "pehkui:base"
+    ],
+    "modifiers": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.15
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_full_cond"
+    }
+  },
+
+  "gibbous_attributes": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_gibbous_cond"
+    },
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "value": 4.0,
+        "operation": "addition",
+        "name": "MoonHealth"
+      },
+      {
+        "attribute": "additionalentityattributes:magic_protection",
+        "operation": "addition",
+        "value": 2.0,
+        "name": "MoonMagicProtection"
+      },
+      {
+        "attribute": "additionalentityattributes:dropped_experience",
+        "operation": "addition",
+        "value": 1.0,
+        "name": "MoonExperience"
+      }
+    ]
+  },
+  "gibbous_size": {
+    "type": "apugli:modify_scale",
+    "delay": 40,
+    "scale_types": [
+      "pehkui:base"
+    ],
+    "modifiers": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.1
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_gibbous_cond"
+    }
+  },
+
+  "quarter_attributes": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_quarter_cond"
+    },
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "value": 1.0,
+        "operation": "addition",
+        "name": "MoonHealth"
+      },
+      {
+        "attribute": "additionalentityattributes:magic_protection",
+        "operation": "addition",
+        "value": 1.0,
+        "name": "MoonMagicProtection"
+      },
+      {
+        "attribute": "additionalentityattributes:dropped_experience",
+        "operation": "addition",
+        "value": 0.5,
+        "name": "MoonExperience"
+      }
+    ]
+  },
+  "quarter_size": {
+    "type": "apugli:modify_scale",
+    "delay": 40,
+    "scale_types": [
+      "pehkui:base"
+    ],
+    "modifiers": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.05
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_quarter_cond"
+    }
+  },
+
+  "cresent_attributes": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_crescent_cond"
+    },
+    "modifiers": [
+      {
+        "attribute": "additionalentityattributes:magic_protection",
+        "operation": "addition",
+        "value": 0.0,
+        "name": "MoonMagicProtection"
+      },
+      {
+        "attribute": "additionalentityattributes:dropped_experience",
+        "operation": "addition",
+        "value": 0.0,
+        "name": "MoonExperience"
+      }
+    ]
+  },
+
+  "new_attributes": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_new_cond"
+    },
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.max_health",
+        "value": -2.0,
+        "operation": "addition",
+        "name": "MoonHealth"
+      },
+      {
+        "attribute": "additionalentityattributes:magic_protection",
+        "operation": "addition",
+        "value": -1.0,
+        "name": "MoonMagicProtection"
+      },
+      {
+        "attribute": "additionalentityattributes:dropped_experience",
+        "operation": "addition",
+        "value": -1.0,
+        "name": "MoonExperience"
+      }
+    ]
+  },
+  "new_size": {
+    "type": "apugli:modify_scale",
+    "delay": 40,
+    "scale_types": [
+      "pehkui:base"
+    ],
+    "modifiers": {
+      "operation": "multiply_total_multiplicative",
+      "value": -0.1
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_new_cond"
+    }
+  }
+}

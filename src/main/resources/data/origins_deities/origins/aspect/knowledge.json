@@ -1,6 +1,6 @@
 {
 	"name": "Knowledge",
-	"description": "You gain an additional point of experience from mining blocks and slaying mobs.",
+	"description": "You gain two additional points of experience from mining blocks and slaying mobs.",
 	"powers": [
 		"origins_deities:secondary/knowledge"
 	],

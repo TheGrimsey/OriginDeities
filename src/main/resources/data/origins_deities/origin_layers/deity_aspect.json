@@ -137,6 +137,31 @@
                     {
                         "type": "origins:origin",
                         "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/alai"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/aranuo"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/moern"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/moon"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
                         "origin": "origins_deities:deity/arum"
                     },
                     {
@@ -183,6 +208,11 @@
                         "type": "origins:origin",
                         "layer": "origins_deities:deity",
                         "origin": "origins_deities:deity/arthera"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/alai"
                     }
                 ]
             },
@@ -208,6 +238,36 @@
             },
             "origins": [
                 "origins_deities:aspect/soulward"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/arum"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/hemos"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/pria"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/caelon"
+                    }
+                ]
+            },
+            "origins": [
+                "origins_deities:aspect/sun"
             ]
         },
         {

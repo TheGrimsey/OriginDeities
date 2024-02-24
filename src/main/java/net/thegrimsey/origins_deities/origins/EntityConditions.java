@@ -29,7 +29,13 @@ public class EntityConditions {
             } else {
                 return false;
             }
+        }));
 
+        register(new ConditionFactory<>(new Identifier(OriginsDeities.MODID, "moon_in_phase"), new SerializableData().add("phase", SerializableDataTypes.INT),
+                (data, entity) -> {
+            int phase = data.getInt("phase");
+
+            return phase == entity.getWorld().getMoonPhase();
         }));
     }
 
