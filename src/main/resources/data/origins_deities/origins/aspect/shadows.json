@@ -1,6 +1,6 @@
 {
 	"name": "Shadows",
-	"description": "When enshrouded in darkness or tall grass you move 20% faster and can see the outline of mobs within 32 blocks.",
+	"description": "When enshrouded in darkness or tall grass you move 20% faster and can see the outline of mobs within 32 blocks.\n\nAdditionally you gain weak night vision.",
 	"powers": [
 		"origins_deities:secondary/shadows"
 	],

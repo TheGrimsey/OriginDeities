@@ -53,15 +53,18 @@
     "green": 0.2,
     "blue": 0.2,
     "bientity_condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:distance",
-          "comparison": "<=",
-          "compare_to": 32
-        }
-      ]
+      "type": "origins:distance",
+      "comparison": "<=",
+      "compare_to": 32
     },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_cond"
+    }
+  },
+  "night_vision": {
+    "type": "origins:night_vision",
+    "strength": 0.15,
     "condition": {
       "type": "origins:power_active",
       "power": "*:*_cond"

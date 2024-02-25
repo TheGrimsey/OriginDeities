@@ -1,6 +1,6 @@
 {
 	"name": "Soul",
-	"description": "Killing hostile creatures fills up your soulward. Upon falling beneath 10% health, the soulward is consumed to heal one hearth per soul.\nYour soulward holds up to 10 souls.",
+	"description": "Upon slaying a hostile creature you absorb their soul. Upon falling beneath 10% health, the souls are consumed to heal one hearth per soul.\nYou can hold up to 15 souls.",
 	"powers": [
 		"origins_deities:secondary/soulward"
 	],

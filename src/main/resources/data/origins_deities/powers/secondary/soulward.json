@@ -5,10 +5,10 @@
   "soulward": {
     "type": "origins:resource",
     "min": 0,
-    "max": 10,
+    "max": 15,
     "hud_render": {
-      "bar_index": 8,
-      "sprite_location": "origins:textures/gui/resource_bar.png"
+      "bar_index": 16,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png"
     }
   },
   "collect_souls": {
@@ -27,13 +27,49 @@
   "consume_souls": {
     "type": "origins:action_when_damage_taken",
     "entity_action": {
-
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins_deities:drain_resource_to_heal",
+          "health_per_resource": 2.0,
+          "resource": "*:*_soulward"
+        },
+        {
+          "type": "origins:spawn_particles",
+          "particle": {
+            "type": "minecraft:sculk_soul"
+          },
+          "count": 128,
+          "speed": 0.2,
+          "spread": {
+            "x": 1.3,
+            "y": 2.0,
+            "z": 1.3
+          }
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:block.sculk_shrieker.shriek",
+          "volume": 1.2,
+          "pitch": 0.6
+        }
+      ]
     },
     "condition": {
-      "type": "origins:resource",
-      "resource": "*:*_soulward",
-      "comparison": ">=",
-      "compare_to": 1
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:relative_health",
+          "comparison": "<=",
+          "compare_to": 0.2
+        },
+        {
+          "type": "origins:resource",
+          "resource": "*:*_soulward",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
     }
   }
 }
