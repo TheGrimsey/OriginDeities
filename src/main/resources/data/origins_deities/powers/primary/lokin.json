@@ -1,0 +1,35 @@
+{
+  "name": "Stories",
+  "description": "Certain actions create a story, stories can be spent to heal allies or hurt enemies.",
+  "type": "origins:multiple",
+
+  "cond": {
+    "type": "origins:simple",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:in_rain"
+        },
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+
+  "particles": {
+    "type": "origins:particle",
+    "particle": "minecraft:note",
+    "frequency": 50,
+    "offset_y": 1.35,
+    "spread": {
+      "x": 0.2,
+      "y": 0.2,
+      "z": 0.2
+    }
+  }
+}

@@ -67,7 +67,7 @@
     "type": "origins:modify_damage_taken",
     "modifier": {
       "name": "HomeDecreasedDamage",
-      "operation": "additions",
+      "operation": "addition",
       "value": -1.0
     },
     "condition": {
@@ -79,7 +79,7 @@
     "type": "origins:modify_damage_taken",
     "modifier": {
       "name": "HomeIncreasedDamage",
-      "operation": "additions",
+      "operation": "addition",
       "value": 1.0
     },
     "condition": {

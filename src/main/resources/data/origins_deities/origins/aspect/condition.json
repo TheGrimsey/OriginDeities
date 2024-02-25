@@ -1,6 +1,6 @@
 {
 	"name": "Condition",
-	"description": "Your max health is increased by 6 hearts.",
+	"description": "Your max health is increased by 5 hearts.",
 	"powers": [
 		"origins_deities:secondary/condition"
 	],

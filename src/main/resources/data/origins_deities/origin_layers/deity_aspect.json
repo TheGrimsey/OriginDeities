@@ -123,6 +123,11 @@
                         "type": "origins:origin",
                         "layer": "origins_deities:deity",
                         "origin": "origins_deities:deity/alai"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/moern"
                     }
                 ]
             },

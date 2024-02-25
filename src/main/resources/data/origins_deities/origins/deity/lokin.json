@@ -2,10 +2,10 @@
 	"name": "origin.origin_deities.lokin.name",
 	"description": "origin.origin_deities.lokin.description",
 	"powers": [
-
+		"origins_deities:primary/lokin"
 	],
 	"icon": {
-		"item": "minecraft:black_dye"
+		"item": "minecraft:writable_book"
 	},
 	"impact": 1
 }
