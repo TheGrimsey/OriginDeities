@@ -2,7 +2,7 @@
   "type": "origins:multiple",
   "hidden": true,
 
-  "full_moon_cond": {
+  "full_cond": {
     "type": "origins:simple",
     "condition": {
       "type": "origins_deities:moon_in_phase",
@@ -64,6 +64,85 @@
       "phase": 4
     }
   },
+  "moon_resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 4,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+      "bar_index": 9
+    }
+  },
+  "full_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_moon_resource",
+      "change": 4,
+      "operation": "set"
+    },
+    "interval": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_full_cond"
+    }
+  },
+  "gibbous_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_moon_resource",
+      "change": 3,
+      "operation": "set"
+    },
+    "interval": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_gibbous_cond"
+    }
+  },
+  "quarter_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_moon_resource",
+      "change": 2,
+      "operation": "set"
+    },
+    "interval": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_quarter_cond"
+    }
+  },
+  "crescent_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_moon_resource",
+      "change": 1,
+      "operation": "set"
+    },
+    "interval": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_crescent_cond"
+    }
+  },
+  "new_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_moon_resource",
+      "change": 0,
+      "operation": "set"
+    },
+    "interval": 200,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_new_cond"
+    }
+  },
 
   "full_attributes": {
     "type": "origins:conditioned_attribute",
@@ -88,7 +167,7 @@
       {
         "attribute": "additionalentityattributes:dropped_experience",
         "operation": "addition",
-        "value": 2.0,
+        "value": 1.0,
         "name": "FullMoonExperience"
       }
     ]
@@ -119,7 +198,7 @@
     "modifiers": [
       {
         "attribute": "minecraft:generic.max_health",
-        "value": 4.0,
+        "value": 6.0,
         "operation": "addition",
         "name": "MoonHealth"
       },
@@ -132,7 +211,7 @@
       {
         "attribute": "additionalentityattributes:dropped_experience",
         "operation": "addition",
-        "value": 1.0,
+        "value": 0.5,
         "name": "MoonExperience"
       }
     ]
@@ -163,7 +242,7 @@
     "modifiers": [
       {
         "attribute": "minecraft:generic.max_health",
-        "value": 1.0,
+        "value": 4.0,
         "operation": "addition",
         "name": "MoonHealth"
       },
@@ -176,7 +255,7 @@
       {
         "attribute": "additionalentityattributes:dropped_experience",
         "operation": "addition",
-        "value": 0.5,
+        "value": 0.25,
         "name": "MoonExperience"
       }
     ]
@@ -230,20 +309,20 @@
     "modifiers": [
       {
         "attribute": "minecraft:generic.max_health",
-        "value": -2.0,
+        "value": -4.0,
         "operation": "addition",
         "name": "MoonHealth"
       },
       {
         "attribute": "additionalentityattributes:magic_protection",
         "operation": "addition",
-        "value": -1.0,
+        "value": -2.0,
         "name": "MoonMagicProtection"
       },
       {
         "attribute": "additionalentityattributes:dropped_experience",
         "operation": "addition",
-        "value": -1.0,
+        "value": -0.5,
         "name": "MoonExperience"
       }
     ]

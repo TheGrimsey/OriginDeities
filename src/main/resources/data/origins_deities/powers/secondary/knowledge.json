@@ -4,7 +4,7 @@
   "modifier": {
     "name": "KnowledgeXpDrops",
     "attribute": "additionalentityattributes:dropped_experience",
-    "value": 2.0,
+    "value": 0.5,
     "operation": "addition"
   }
 }

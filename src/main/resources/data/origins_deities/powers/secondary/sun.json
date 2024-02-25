@@ -5,41 +5,34 @@
   "cond": {
     "type": "origins:simple",
     "condition": {
-      "type": "origins:in_block",
-      "block_condition": {
-        "type": "origins:light_level",
-        "light_type": "sky",
-        "comparison": ">=",
-        "compare_to": 11
-      }
+      "type": "origins:exposed_to_sun"
     }
   },
   "bonus_loot": {
     "type": "origins:conditioned_attribute",
     "tick_rate": 40,
-    "modifier": {
-      "name": "SunRareLootChance",
-      "attribute": "additionalentityattributes:bonus_rare_loot_rolls",
-      "value": 2.0,
-      "operation": "addition"
-    },
+    "modifiers": [
+      {
+        "name": "SunRareLootChance",
+        "attribute": "additionalentityattributes:bonus_rare_loot_rolls",
+        "value": 2.0,
+        "operation": "addition"
+      }
+    ],
     "condition": {
       "type": "origins:power_active",
       "power": "*:*_cond"
     }
   },
-  "dig_speed": {
-    "type": "origins:conditioned_attribute",
-    "tick_rate": 40,
-    "modifier": {
-      "name": "SunRareLootChance",
-      "attribute": "additionalentityattributes:dig_speed",
-      "value": 0.1,
-      "operation": "multiply_total"
-    },
+  "break_speed": {
+    "type": "origins:modify_break_speed",
     "condition": {
       "type": "origins:power_active",
       "power": "*:*_cond"
+    },
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 1.0
     }
   }
 }

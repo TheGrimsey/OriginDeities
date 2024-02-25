@@ -1,11 +1,11 @@
 {
 	"name": "Knowledge",
-	"description": "You gain two additional points of experience from mining blocks and slaying mobs.",
+	"description": "You gain 50% additional experience from mining blocks and slaying mobs.",
 	"powers": [
 		"origins_deities:secondary/knowledge"
 	],
 	"icon": {
 		"item": "minecraft:enchanting_table"
 	},
-	"impact": 0
+	"impact": 1
 }

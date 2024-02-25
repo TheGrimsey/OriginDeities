@@ -7,7 +7,7 @@
     "entity_action": {
       "type": "origins:change_resource",
       "resource": "*:*_rage_timer",
-      "change": 20
+      "change": 30
     },
     "target_condition": {
       "type": "origins_deities:is_hostile"
@@ -16,10 +16,14 @@
   "rage_timer": {
     "type": "origins:resource",
     "min": 0,
-    "max": 20,
+    "max": 30,
     "hud_render": {
-      "sprite_location": "origins:textures/gui/community/community/huang/resource_bar_01.png",
-      "bar_index": 17
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+      "bar_index": 17,
+      "condition": {
+        "type": "origins:power_active",
+        "power": "*:*_is_raging"
+      }
     },
     "min_action": {
       "type": "origins:apply_effect",
@@ -27,12 +31,12 @@
         {
           "effect": "minecraft:weakness",
           "duration": 200,
-          "amplifier": 0
+          "amplifier": 1
         },
         {
           "effect": "minecraft:slowness",
           "duration": 200,
-          "amplifier": 0
+          "amplifier": 1
         }
       ]
     }
