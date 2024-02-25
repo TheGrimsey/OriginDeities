@@ -35,14 +35,15 @@
     "tick_rate": 40,
     "condition": {
       "type": "origins:power_active",
-      "power": "*:*_cond"
+      "power": "*:*_cond",
+      "inverted": true
     }
   },
   "decreased_exhaustion": {
     "type": "origins:modify_exhaustion",
     "modifier": {
-      "name": "Increased exhaustion",
-      "operation": "multiply_base",
+      "name": "Decreased exhaustion",
+      "operation": "multiply_total",
       "value": 0.5
     },
     "condition": {
@@ -54,7 +55,7 @@
     "type": "origins:modify_exhaustion",
     "modifier": {
       "name": "Increased exhaustion",
-      "operation": "multiply_base",
+      "operation": "multiply_total",
       "value": 1.5
     },
     "condition": {

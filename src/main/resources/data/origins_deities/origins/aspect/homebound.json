@@ -1,6 +1,6 @@
 {
 	"name": "Home",
-	"description": "When within 64 blocks of your spawn point, your max health is increased by 3 hearts & you accumulate 50% less exhaustion.\nThese effects are inverted beyond this distance.",
+	"description": "When within 64 blocks of your spawn point, your max health is increased by 3 hearts & you accumulate 50% less exhaustion.\nAdditionally damage taken is reduced by half a heart.\nThese effects are inverted beyond this distance.",
 	"powers": [
 		"origins_deities:secondary/homebound"
 	],
