@@ -16,6 +16,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.thegrimsey.origins_deities.blocks.GlobeOfLight;
 import net.thegrimsey.origins_deities.entities.ThrownGlobeOfLightEntity;
+import net.thegrimsey.origins_deities.items.Story;
 import net.thegrimsey.origins_deities.origins.EntityActions;
 import net.thegrimsey.origins_deities.origins.EntityConditions;
 import net.thegrimsey.origins_deities.origins.ItemConditions;
@@ -28,6 +29,8 @@ public class OriginsDeities implements ModInitializer {
 	public static final GlobeOfLight GLOBE_OF_LIGHT = new GlobeOfLight(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).breakInstantly().noCollision().luminance(state -> 15).ticksRandomly().sounds(BlockSoundGroup.GLASS));
 	public static final BlockItem GLOBE_OF_LIGHT_ITEM = new BlockItem(GLOBE_OF_LIGHT, new FabricItemSettings());
 
+	public static final Story STORY = new Story();
+
 	@Override
 	public void onInitialize() {
 		ItemConditions.register();
@@ -37,6 +40,8 @@ public class OriginsDeities implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT);
 		Registry.register(Registries.ITEM, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT_ITEM);
 		Registry.register(Registries.ENTITY_TYPE, new Identifier(MODID, "globe_of_light"), THROWN_GLOBE_OF_LIGHT_ENTITY);
+
+		Registry.register(Registries.ITEM, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT_ITEM);
 	}
 
 	static {
