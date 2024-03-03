@@ -30,5 +30,48 @@
     "origin.origin_deities.pria.description": "Goddess of Life",
 
     "origin.origin_deities.tyra.name": "Tyra",
-    "origin.origin_deities.tyra.description": "Goddess of Storms"
+    "origin.origin_deities.tyra.description": "Goddess of Storms",
+
+    "item.origins_deities.story": "Unnamed Story",
+    "origins_deities.story.written_by": "Composed by %s on day %d.",
+    "origins_deities.story.power": "Contains %d power.",
+
+    "origins_deities.story.name.article.0": "The",
+    "origins_deities.story.name.article.1": "A",
+    "origins_deities.story.name.article.2": "%s's",
+
+    "origins_deities.story.name.descriptor.0": "Song",
+    "origins_deities.story.name.descriptor.1": "Ballad",
+    "origins_deities.story.name.descriptor.2": "Tale",
+    "origins_deities.story.name.descriptor.3": "Memory",
+    "origins_deities.story.name.descriptor.4": "Ode",
+    "origins_deities.story.name.descriptor.5": "Poem",
+    "origins_deities.story.name.descriptor.6": "Story",
+    "origins_deities.story.name.descriptor.7": "Dance",
+    "origins_deities.story.name.descriptor.8": "Game",
+    "origins_deities.story.name.descriptor.9": "Saga",
+    "origins_deities.story.name.descriptor.10": "Epic",
+    "origins_deities.story.name.descriptor.11": "Tragedy",
+
+    "origins_deities.story.name.binding.0": "of",
+
+    "origins_deities.story.name.final.kill.0": "Death",
+    "origins_deities.story.name.final.kill.1": "Ends",
+    "origins_deities.story.name.final.kill.2": "Killing",
+    "origins_deities.story.name.final.kill.3": "Murder",
+    "origins_deities.story.name.final.kill.4": "the %s",
+    "origins_deities.story.name.final.kill.5": "the Hunt",
+
+    "origins_deities.story.name.final.frozen.0": "Ice",
+    "origins_deities.story.name.final.frozen.1": "Frost",
+    "origins_deities.story.name.final.frozen.2": "Hoarfrost",
+    "origins_deities.story.name.final.frozen.3": "North Wind",
+    "origins_deities.story.name.final.frozen.4": "Snow",
+
+    "origins_deities.story.name.combined": "%s %s %s %s",
+
+    "origins_deities.lokin.inventory": "Stories",
+    "origins_deities.story.effect.damage": "Damage",
+    "origins_deities.story.effect.heal": "Heal",
+    "origins_deities.story.effect.freeze": "Freeze"
 }

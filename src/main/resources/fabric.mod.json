@@ -26,6 +26,9 @@
       "net.thegrimsey.origins_deities.OriginsDeitiesClient"
     ]
   },
+  "mixins": [
+    "origins_deities.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": ">=0.15.7",

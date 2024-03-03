@@ -3,21 +3,28 @@
   "description": "Certain actions create a story, stories can be spent to heal allies or hurt enemies.",
   "type": "origins:multiple",
 
-  "cond": {
-    "type": "origins:simple",
+  "activate_open_inventory": {
+    "type": "origins:inventory",
+    "title": "origins_deities.lokin.inventory",
+    "container_type": "dropper",
+    "drop_on_death": false,
+    "key": {
+      "key": "key.origins_deities.god_active"
+    },
     "condition": {
-      "type": "origins:or",
-      "conditions": [
-        {
-          "type": "origins:in_rain"
-        },
-        {
-          "type": "origins:fluid_height",
-          "fluid": "minecraft:water",
-          "comparison": ">",
-          "compare_to": 0
-        }
-      ]
+      "type": "origins:sneaking"
+    }
+  },
+  "activate_stories": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins_deities.god_active"
+    },
+    "entity_action": {
+    },
+    "condition": {
+      "type": "origins:sneaking",
+      "inverted": true
     }
   },
 
@@ -30,6 +37,19 @@
       "x": 0.2,
       "y": 0.2,
       "z": 0.2
+    }
+  },
+  "create_kill_story": {
+    "type": "origins_deities:self_action_on_kill",
+    "bientity_action": {
+      "type": "origins_deities:create_story",
+      "action_type": "KILLED_HOSTILE",
+      "participant_distance": 5.0,
+      "participant_multiplier": 1.0
+    },
+    "target_condition": {
+      "type": "origins_deities:is_hostile"
+      }
     }
   }
 }
