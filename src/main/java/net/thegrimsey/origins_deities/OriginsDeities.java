@@ -1,12 +1,10 @@
 package net.thegrimsey.origins_deities;
 
-import io.github.apace100.apoli.power.SelfActionOnKillPower;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.MapColor;
-import net.minecraft.client.render.GameRenderer;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -43,8 +41,6 @@ public class OriginsDeities implements ModInitializer {
 		Registry.register(Registries.ENTITY_TYPE, new Identifier(MODID, "globe_of_light"), THROWN_GLOBE_OF_LIGHT_ENTITY);
 
 		Registry.register(Registries.ITEM, new Identifier(MODID, "story"), STORY);
-
-		GameRenderer
 	}
 
 	static {
