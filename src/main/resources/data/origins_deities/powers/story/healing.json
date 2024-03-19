@@ -1,5 +1,5 @@
 {
-  "type": "origins:active_self",
+  "type": "origins_deities:story_power",
   "entity_action": {
     "type": "origins:and",
     "actions": [
@@ -53,9 +53,5 @@
         }
       }
     ]
-  },
-  "key": {
-    "key": "key.origins_deities.god_active",
-    "continuous": false
   }
 }

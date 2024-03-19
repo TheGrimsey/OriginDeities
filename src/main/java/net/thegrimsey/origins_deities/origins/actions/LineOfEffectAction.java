@@ -26,6 +26,7 @@ public class LineOfEffectAction {
             double diameter = length * 2;
 
             Vec3d eyePos = livingEntity.getEyePos();
+            Vec3d altForward = Vec3d.fromPolar(livingEntity.getPitch(), livingEntity.getYaw());
             Vec3d forward = livingEntity.getRotationVec(1.0f);
 
             for (Entity check : livingEntity.getWorld().getNonSpectatingEntities(Entity.class, Box.of(eyePos, diameter, diameter, diameter))) {
@@ -46,9 +47,9 @@ public class LineOfEffectAction {
     // This makes sense, i ported it from rust don't worry about it.
     static boolean isInLine(Vec3d start, Vec3d direction, double width, Vec3d position) {
         Vec3d delta = position.subtract(start);
-        double angle = direction.dotProduct(delta) / Math.sqrt(direction.lengthSquared() * delta.lengthSquared());
+        double angle = Math.acos(direction.dotProduct(delta) / Math.sqrt(direction.lengthSquared() * delta.lengthSquared()));
 
-        double distanceFromLine = Math.abs(Math.sin(angle) * start.distanceTo(delta));
+        double distanceFromLine = Math.abs(Math.sin(angle)) * start.distanceTo(position);
 
         return distanceFromLine <= width;
     }

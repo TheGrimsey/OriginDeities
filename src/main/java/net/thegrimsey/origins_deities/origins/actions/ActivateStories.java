@@ -57,8 +57,8 @@ public class ActivateStories {
             for (int effect: effects) {
                 StoryEffectType effectType = StoryEffectType.values()[effect];
 
-                Power power = component.getPower(effectType.power);
-                if(power instanceof StoryPower storyPower) {
+                Power effectPower = component.getPower(effectType.power);
+                if(effectPower instanceof StoryPower storyPower) {
                     storyPower.onActivateStory();
                 }
             }

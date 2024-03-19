@@ -21,6 +21,7 @@
       "key": "key.origins_deities.god_active"
     },
     "entity_action": {
+      "type": "origins_deities:activate_stories"
     },
     "condition": {
       "type": "origins:sneaking",
@@ -48,8 +49,30 @@
       "participant_multiplier": 1.0
     },
     "target_condition": {
-      "type": "origins_deities:is_hostile"
-      }
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins_deities:is_hostile"
+        },
+        {
+          "type": "origins:in_tag",
+          "tag": "c:bosses",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "create_boss_kill_story": {
+    "type": "origins_deities:self_action_on_kill",
+    "bientity_action": {
+      "type": "origins_deities:create_story",
+      "action_type": "KILLED_BOSS",
+      "participant_distance": 64.0,
+      "participant_multiplier": 1.0
+    },
+    "target_condition": {
+      "type": "origins:in_tag",
+      "tag": "c:bosses"
     }
   }
 }

@@ -9,12 +9,12 @@ public enum StoryEffectType {
     DAMAGE(
         "origins_deities.story.effect.damage",
         Formatting.RED,
-        new PowerTypeReference(new Identifier(OriginsDeities.MODID,""))
+        new PowerTypeReference(new Identifier(OriginsDeities.MODID,"story/damage"))
     ),
     HEAL(
         "origins_deities.story.effect.heal",
         Formatting.GREEN,
-        new PowerTypeReference(new Identifier(OriginsDeities.MODID,""))
+        new PowerTypeReference(new Identifier(OriginsDeities.MODID,"story/healing"))
     ),
     FREEZE(
         "origins_deities.story.effect.freeze",

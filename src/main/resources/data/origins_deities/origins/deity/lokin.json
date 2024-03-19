@@ -2,7 +2,9 @@
 	"name": "origin.origin_deities.lokin.name",
 	"description": "origin.origin_deities.lokin.description",
 	"powers": [
-		"origins_deities:primary/lokin"
+		"origins_deities:primary/lokin",
+		"origins_deities:story/damage",
+		"origins_deities:story/healing"
 	],
 	"icon": {
 		"item": "minecraft:writable_book"

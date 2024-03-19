@@ -28,7 +28,7 @@ public class StoryPower extends Power {
     }
 
     public static PowerFactory createFactory() {
-        return new PowerFactory<>(new Identifier(OriginsDeities.MODID, "self_action_on_kill"),
+        return new PowerFactory<>(new Identifier(OriginsDeities.MODID, "story_power"),
                 new SerializableData()
                         .add("entity_action", ApoliDataTypes.ENTITY_ACTION),
                 data ->

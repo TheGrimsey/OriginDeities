@@ -5,16 +5,17 @@ import io.github.apace100.apoli.registry.ApoliRegistries;
 import net.minecraft.entity.Entity;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Pair;
-import net.thegrimsey.origins_deities.origins.actions.CreateStory;
-import net.thegrimsey.origins_deities.origins.actions.DrainResourceToHeal;
-import net.thegrimsey.origins_deities.origins.actions.LineOfEffectAction;
+import net.thegrimsey.origins_deities.origins.actions.*;
 
 public class EntityActions {
 
     public static void registerEntityAction() {
         registerEntityAction(DrainResourceToHeal.getFactory());
         registerEntityAction(LineOfEffectAction.getFactory());
+        registerEntityAction(ActivateStories.getFactory());
         registerBiEntityAction(CreateStory.getFactory());
+        registerBiEntityAction(HealWithStory.getFactory());
+        registerBiEntityAction(DamageWithStory.getFactory());
     }
 
     private static void registerEntityAction(ActionFactory<Entity> actionFactory) {

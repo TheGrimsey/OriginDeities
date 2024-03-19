@@ -21,6 +21,7 @@ import net.minecraft.util.math.Vec3d;
 import net.thegrimsey.origins_deities.OriginsDeities;
 import net.thegrimsey.origins_deities.StoryActionType;
 import net.thegrimsey.origins_deities.StoryEffectType;
+import net.thegrimsey.origins_deities.StoryUtils;
 import net.thegrimsey.origins_deities.items.StoryItem;
 
 import java.util.List;
@@ -28,8 +29,6 @@ import java.util.List;
 public class CreateStory {
     public static void action(SerializableData.Instance data, Pair<Entity, Entity> entities) {
         if(entities.getLeft() instanceof ServerPlayerEntity player) {
-            PowerHolderComponent component = PowerHolderComponent.KEY.get(player);
-
             float participantDistance = data.getFloat("participant_distance");
             float participantMultiplier = data.getFloat("participant_multiplier");
             String actionTypeId = data.getString("action_type");
@@ -41,49 +40,7 @@ public class CreateStory {
 
             List<Entity> participants = player.getWorld().getOtherEntities(player, supporterBox, otherEntity -> otherEntity instanceof PlayerEntity || otherEntity instanceof TameableEntity tame && tame.isTamed() && !tame.isSitting());
 
-            float participantPower = participants.size() * participantMultiplier;
-            int totalPower = (int)(participantPower + actionType.power);
-
-            NbtCompound nbt = new NbtCompound();
-            nbt.putString("writer", Text.Serializer.toJson(player.getDisplayName()));
-            nbt.putString("subject", Text.Serializer.toJson(entities.getRight().getDisplayName()));
-
-            NbtList participantsNbt = new NbtList();
-            participants.forEach(participant -> participantsNbt.add(NbtString.of(Text.Serializer.toJson(participant.getName()))));
-            nbt.put("participants", participantsNbt);
-            nbt.putInt("participant_count", participants.size());
-
-            nbt.putInt("action_type", actionType.ordinal());
-            nbt.putInt("power", totalPower);
-
-            int article = player.getRandom().nextInt(StoryItem.ARTICLE_COUNT);
-            nbt.putInt("name_article", article);
-
-            int descriptor = player.getRandom().nextInt(StoryItem.DESCRIPTOR_COUNT);
-            nbt.putInt("name_descriptor", descriptor);
-
-            int binding = player.getRandom().nextInt(StoryItem.BINDING_COUNT);
-            nbt.putInt("name_binding", binding);
-
-            int finalName = player.getRandom().nextInt(actionType.namesCount);
-            nbt.putInt("name_final", finalName);
-
-            long inGameTime = player.getWorld().getTimeOfDay();
-            nbt.putLong("creation_time", inGameTime);
-
-            long realTime = System.currentTimeMillis();
-            nbt.putLong("creation_time_real", realTime);
-
-            // EFFECT
-            int possibleEffect = player.getRandom().nextInt(actionType.possibleEffects.length);
-            int effect = actionType.possibleEffects[possibleEffect].ordinal();
-
-            nbt.putInt("effect_type", effect);
-
-            ItemStack story = new ItemStack(OriginsDeities.STORY, 1);
-            story.setNbt(nbt);
-
-            player.giveItemStack(story);
+            StoryUtils.createStory(actionType, player, entities.getRight(), participants, participantMultiplier);
         }
     }
     public static ActionFactory<Pair<Entity, Entity>> getFactory() {
