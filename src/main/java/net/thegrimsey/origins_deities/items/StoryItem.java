@@ -94,7 +94,7 @@ public class StoryItem extends Item {
         Text writerTranslatedText = Text.translatable("origins_deities.story.written_by", writerText, day).formatted(Formatting.ITALIC, Formatting.GRAY);
         tooltip.add(writerTranslatedText);
 
-        StoryEffectType effect = StoryEffectType.values()[nbt.getInt("effect")];
+        StoryEffectType effect = StoryEffectType.values()[nbt.getInt("effect_type")];
 
         Text effectTranslatedText = Text.translatable(effect.translationKey).formatted(Formatting.ITALIC, Formatting.BOLD, effect.formatting);
         tooltip.add(effectTranslatedText);

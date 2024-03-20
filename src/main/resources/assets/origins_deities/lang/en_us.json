@@ -61,12 +61,26 @@
     "origins_deities.story.name.final.kill.3": "Murder",
     "origins_deities.story.name.final.kill.4": "the %s",
     "origins_deities.story.name.final.kill.5": "the Hunt",
+    "origins_deities.story.name.final.kill.6": "Entropy",
+
+    "origins_deities.story.name.final.healing.0": "Healing",
+    "origins_deities.story.name.final.healing.1": "Rejuvenation",
+    "origins_deities.story.name.final.healing.2": "Restoration",
+    "origins_deities.story.name.final.healing.3": "the Rise",
+    "origins_deities.story.name.final.healing.4": "Counter-Entropy",
+    "origins_deities.story.name.final.healing.5": "Hearts",
+    "origins_deities.story.name.final.healing.6": "Life",
+    "origins_deities.story.name.final.healing.7": "the %s",
 
     "origins_deities.story.name.final.frozen.0": "Ice",
     "origins_deities.story.name.final.frozen.1": "Frost",
     "origins_deities.story.name.final.frozen.2": "Hoarfrost",
-    "origins_deities.story.name.final.frozen.3": "North Wind",
+    "origins_deities.story.name.final.frozen.3": "North Winds",
     "origins_deities.story.name.final.frozen.4": "Snow",
+    "origins_deities.story.name.final.frozen.5": "Cold",
+    "origins_deities.story.name.final.frozen.6": "Arctic Winds",
+    "origins_deities.story.name.final.frozen.7": "the Arctic",
+    "origins_deities.story.name.final.frozen.8": "Glaciers",
 
     "origins_deities.story.name.combined": "%s %s %s %s",
 

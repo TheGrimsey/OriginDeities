@@ -2,17 +2,22 @@ package net.thegrimsey.origins_deities;
 
 class StoryConstants {
     static final String KILL_TRANSLATION_KEY = "origins_deities.story.name.final.kill.";
-    static final int KILL_FINAL_NAMES_COUNT = 6;
+    static final int KILL_FINAL_NAMES_COUNT = 7;
 
     static final String FROZEN_TRANSLATION_KEY = "origins_deities.story.name.final.frozen.";
-    static final int FROZEN_FINAL_NAMES_COUNT = 5;
+    static final int FROZEN_FINAL_NAMES_COUNT = 9;
+
+    static final String HEALING_TRANSLATION_KEY = "origins_deities.story.name.final.healing.";
+    static final int HEALING_FINAL_NAMES_COUNT = 8;
 }
 
 public enum StoryActionType {
     KILLED_HOSTILE(1.0f, StoryConstants.KILL_TRANSLATION_KEY, StoryConstants.KILL_FINAL_NAMES_COUNT, StoryEffectType.NEGATIVE_EFFECTS),
     KILLED_PLAYER(1.0f, StoryConstants.KILL_TRANSLATION_KEY, StoryConstants.KILL_FINAL_NAMES_COUNT, StoryEffectType.NEGATIVE_EFFECTS),
     KILLED_BOSS(4.0f, StoryConstants.KILL_TRANSLATION_KEY, StoryConstants.KILL_FINAL_NAMES_COUNT, StoryEffectType.NEGATIVE_EFFECTS),
-    FROZEN(1.0f, StoryConstants.FROZEN_TRANSLATION_KEY, StoryConstants.FROZEN_FINAL_NAMES_COUNT, StoryEffectType.COLD_EFFECTS);
+    FROZEN(1.0f, StoryConstants.FROZEN_TRANSLATION_KEY, StoryConstants.FROZEN_FINAL_NAMES_COUNT, StoryEffectType.COLD_EFFECTS),
+    BRED_ANIMAL(1.0f, StoryConstants.HEALING_TRANSLATION_KEY, StoryConstants.HEALING_FINAL_NAMES_COUNT, StoryEffectType.POSITIVE_EFFECTS),
+    BONEMEAL(1.0f, StoryConstants.HEALING_TRANSLATION_KEY, StoryConstants.HEALING_FINAL_NAMES_COUNT, StoryEffectType.POSITIVE_EFFECTS);
 
 
     public final float power;
@@ -33,7 +38,9 @@ public enum StoryActionType {
             case "KILLED_HOSTILE" -> KILLED_HOSTILE;
             case "KILLED_PLAYER" -> KILLED_PLAYER;
             case "KILLED_BOSS" -> KILLED_BOSS;
+            case "BRED_ANIMAL" -> BRED_ANIMAL;
             case "FROZEN" -> FROZEN;
+            case "BONEMEAL" -> BONEMEAL;
             default -> null;
         };
     }

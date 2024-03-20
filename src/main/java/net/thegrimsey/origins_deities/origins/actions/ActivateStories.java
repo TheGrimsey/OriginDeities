@@ -49,7 +49,7 @@ public class ActivateStories {
                     NbtCompound nbt = stack.getNbt();
 
                     totalPower += nbt.getInt("power");
-                    effects.add(nbt.getInt("effect"));
+                    effects.add(nbt.getInt("effect_type"));
                 }
             }
             ((PowerInterface)player).setPower(totalPower);

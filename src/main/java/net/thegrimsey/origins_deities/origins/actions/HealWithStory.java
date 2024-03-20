@@ -14,7 +14,7 @@ public class HealWithStory {
         if(entities.getLeft() instanceof LivingEntity livingEntity && entities.getRight() instanceof LivingEntity targetEntity) {
             int power = ((PowerInterface) livingEntity).getPower();
 
-            float overHeal = Math.abs(targetEntity.getMaxHealth() - targetEntity.getHealth() - (float)power);
+            float overHeal = targetEntity.getHealth() + (float)power - targetEntity.getMaxHealth();
             targetEntity.heal(power);
 
             float overHealAmount = (float) ((overHeal * 0.5f) * Math.pow(0.98f, Math.max(overHeal - 2.0f, 0.0f)));

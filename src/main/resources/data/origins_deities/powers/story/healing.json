@@ -5,22 +5,19 @@
     "actions": [
       {
         "type": "origins:spawn_particles",
-        "particle": {
-          "type": "minecraft:block",
-          "params": "minecraft:emerald_block"
-        },
-        "count": 256,
+        "particle": "minecraft:note",
+        "count": 64,
         "speed": 0.3,
         "force": true,
         "spread": {
           "x": 8.0,
-          "y": 1.0,
+          "y": 0.1,
           "z": 8.0
         }
       },
       {
         "type": "origins:area_of_effect",
-        "include_actor": true,
+        "include_target": true,
         "radius": 8,
         "bientity_action": {
           "type": "origins_deities:heal_with_story"

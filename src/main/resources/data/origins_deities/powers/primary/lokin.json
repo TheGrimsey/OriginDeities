@@ -43,10 +43,15 @@
   "create_kill_story": {
     "type": "origins_deities:self_action_on_kill",
     "bientity_action": {
-      "type": "origins_deities:create_story",
-      "action_type": "KILLED_HOSTILE",
-      "participant_distance": 5.0,
-      "participant_multiplier": 1.0
+
+      "type": "origins:chance",
+      "action": {
+        "type": "origins_deities:create_story",
+        "action_type": "KILLED_HOSTILE",
+        "participant_distance": 5.0,
+        "participant_multiplier": 1.0
+      },
+      "chance": 0.01
     },
     "target_condition": {
       "type": "origins:and",
@@ -73,6 +78,19 @@
     "target_condition": {
       "type": "origins:in_tag",
       "tag": "c:bosses"
+    }
+  },
+  "create_bonemeal_heal_story": {
+    "type": "apugli:action_on_bonemeal",
+    "self_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins_deities:create_story",
+        "action_type": "BONEMEAL",
+        "participant_distance": 4.0,
+        "participant_multiplier": 1.0
+      },
+      "chance": 0.005
     }
   }
 }

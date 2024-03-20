@@ -13,7 +13,10 @@ public class EntityActions {
         registerEntityAction(DrainResourceToHeal.getFactory());
         registerEntityAction(LineOfEffectAction.getFactory());
         registerEntityAction(ActivateStories.getFactory());
+
         registerBiEntityAction(CreateStory.getFactory());
+        registerEntityAction(CreateStoryStraight.getFactory());
+
         registerBiEntityAction(HealWithStory.getFactory());
         registerBiEntityAction(DamageWithStory.getFactory());
     }
