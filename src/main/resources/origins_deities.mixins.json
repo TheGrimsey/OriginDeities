@@ -4,6 +4,7 @@
   "package": "net.thegrimsey.origins_deities.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AnimalEntityMixin",
     "LivingEntityMixin"
   ],
   "injectors": {

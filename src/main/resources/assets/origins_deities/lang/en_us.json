@@ -82,7 +82,16 @@
     "origins_deities.story.name.final.frozen.7": "the Arctic",
     "origins_deities.story.name.final.frozen.8": "Glaciers",
 
-    "origins_deities.story.name.combined": "%s %s %s %s",
+
+    "origins_deities.story.name.forged.0": ", 1st Ed",
+    "origins_deities.story.name.forged.1": ", Signed Copy",
+    "origins_deities.story.name.forged.2": ", Signature Edition",
+    "origins_deities.story.name.forged.3": ", Postmortem",
+    "origins_deities.story.name.forged.4": " (%s's version)",
+    "origins_deities.story.name.forged.5": ", Collectors Edition",
+    "origins_deities.story.name.forged.6": ", Author's Notes",
+
+    "origins_deities.story.name.combined": "%s %s %s %s%s",
 
     "origins_deities.lokin.inventory": "Stories",
     "origins_deities.story.effect.damage": "Damage",

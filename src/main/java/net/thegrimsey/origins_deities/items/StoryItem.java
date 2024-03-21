@@ -13,6 +13,7 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.thegrimsey.origins_deities.StoryActionType;
+import net.thegrimsey.origins_deities.StoryConstants;
 import net.thegrimsey.origins_deities.StoryEffectType;
 import org.jetbrains.annotations.Nullable;
 
@@ -53,6 +54,11 @@ public class StoryItem extends Item {
     }
 
     @Override
+    public boolean hasGlint(ItemStack stack) {
+        return super.hasGlint(stack) || (stack.hasNbt() && stack.getNbt().contains("forged"));
+    }
+
+    @Override
     public Text getName(ItemStack stack) {
         NbtCompound nbt = stack.getNbt();
         if(nbt != null) {
@@ -72,7 +78,13 @@ public class StoryItem extends Item {
             StoryActionType actionType = StoryActionType.fromId(nbt.getInt("action_type"));
             Text finalName = Text.translatable(actionType.namesTranslationKey + finalIndex, subject);
 
-            return Text.translatable("origins_deities.story.name.combined", article, descriptor, binding, finalName);
+            Text forged = Text.empty();
+            if(nbt.contains("forged")) {
+                int forgedIndex = nbt.getInt("forged");
+                forged = Text.translatable(StoryConstants.FORGED_TRANSLATION_KEY + forgedIndex, writer).formatted(Formatting.ITALIC, Formatting.GRAY);
+            }
+
+            return Text.translatable("origins_deities.story.name.combined", article, descriptor, binding, finalName, forged);
         }
 
         return super.getName(stack);

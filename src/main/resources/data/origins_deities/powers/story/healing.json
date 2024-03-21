@@ -1,5 +1,6 @@
 {
   "type": "origins_deities:story_power",
+  "hidden": true,
   "entity_action": {
     "type": "origins:and",
     "actions": [

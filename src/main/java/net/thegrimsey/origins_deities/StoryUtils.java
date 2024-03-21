@@ -29,6 +29,14 @@ public class StoryUtils {
             nbt.putString("subject", Text.Serializer.toJson(subject.getDisplayName()));
         }
 
+        if(storyFor.getRandom().nextFloat() < 0.3) {
+            totalPower *= 1.5;
+            totalPower += 1;
+
+            int forgedSuffix = storyFor.getRandom().nextInt(StoryConstants.FORGED_COUNT);
+            nbt.putInt("forged", forgedSuffix);
+        }
+
         NbtList participantsNbt = new NbtList();
         participants.forEach(participant -> participantsNbt.add(NbtString.of(Text.Serializer.toJson(participant.getName()))));
         nbt.put("participants", participantsNbt);

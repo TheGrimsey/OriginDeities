@@ -1,6 +1,6 @@
 {
   "name": "Stories",
-  "description": "Certain actions create a story, stories can be spent to heal allies or hurt enemies.",
+  "description": "Certain actions create a story.\nActivating your deity ability whilst sneaking opens your story bag.\nStories in your story bag contribute to your power.",
   "type": "origins:multiple",
 
   "activate_open_inventory": {
@@ -78,6 +78,19 @@
     "target_condition": {
       "type": "origins:in_tag",
       "tag": "c:bosses"
+    }
+  },
+  "create_breed_story": {
+    "type": "origins_deities:self_action_on_breed",
+    "bientity_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins_deities:create_story",
+        "action_type": "BRED_ANIMAL",
+        "participant_distance": 5.0,
+        "participant_multiplier": 1.0
+      },
+      "chance": 0.015
     }
   },
   "create_bonemeal_heal_story": {

@@ -39,9 +39,9 @@ public class ActivateStories {
         if(entity instanceof ServerPlayerEntity player) {
             PowerHolderComponent component = PowerHolderComponent.KEY.get(player);
 
-            // Terrible performance.
             InventoryPower power = (InventoryPower) component.getPower(INVENTORY_ID);
 
+            // Terrible performance.
             int totalPower = 0;
             HashSet<Integer> effects = new HashSet<>();
             for(ItemStack stack : power.getContainer()) {
