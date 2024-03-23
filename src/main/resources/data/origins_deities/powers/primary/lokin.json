@@ -21,11 +21,27 @@
       "key": "key.origins_deities.god_active"
     },
     "entity_action": {
-      "type": "origins_deities:activate_stories"
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins_deities:activate_stories"
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:item.goat_horn.sound.1",
+          "volume": 0.6,
+          "pitch": 1.75
+        }
+      ]
     },
     "condition": {
       "type": "origins:sneaking",
       "inverted": true
+    },
+    "cooldown": 600,
+    "hud_render": {
+      "bar_index": 13,
+      "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png"
     }
   },
 
