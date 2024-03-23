@@ -3,7 +3,7 @@
   "hidden": true,
   "modifier": {
     "name": "HuntersAgilityJump",
-    "attribute": "doublejumpattribute:double_jump_attribute",
+    "attribute": "doublejumpattribute:doublejumpattribute",
     "value": 1.0,
     "operation": "addition"
   }
