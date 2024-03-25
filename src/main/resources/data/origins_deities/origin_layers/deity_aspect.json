@@ -18,6 +18,11 @@
                         "type": "origins:origin",
                         "layer": "origins_deities:deity",
                         "origin": "origins_deities:deity/tyra"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/hemos"
                     }
                 ]
             },
@@ -38,6 +43,11 @@
                         "type": "origins:origin",
                         "layer": "origins_deities:deity",
                         "origin": "origins_deities:deity/pria"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "layer": "origins_deities:deity",
+                        "origin": "origins_deities:deity/caelon"
                     }
                 ]
             },

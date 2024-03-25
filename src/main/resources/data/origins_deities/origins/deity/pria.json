@@ -2,7 +2,8 @@
 	"name": "origin.origin_deities.pria.name",
 	"description": "origin.origin_deities.pria.description",
 	"powers": [
-		"origins_deities:primary/blessing_of_sacrifice"
+		"origins_deities:primary/blessing_of_sacrifice",
+		"origins_deities:primary/life_healing_pots"
 	],
 	"icon": {
 		"item": "minecraft:enchanted_golden_apple"
