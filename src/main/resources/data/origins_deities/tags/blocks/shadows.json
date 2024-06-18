@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:grass",
+    "#minecraft:saplings",
+    {
+      "id": "#apoli:material/plants",
+       "required": false
+    },
+    {
+      "id": "#forgero:plants",
+      "required": false
+    },
+    {
+      "id": "#forgero:plants",
+      "required": false
+    },
+    {
+      "id": "#immersive_weathering:leaf_piles",
+      "required": false
+    }
+  ]
+}

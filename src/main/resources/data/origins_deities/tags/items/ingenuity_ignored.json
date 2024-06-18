@@ -51,6 +51,936 @@
     "minecraft:dried_kelp",
 
     "minecraft:honey_block",
-    "minecraft:honey_bottle"
+    "minecraft:honey_bottle",
+    {
+      "id": "betternether:cincinnasite_forged",
+      "required": false
+    },
+    {
+      "id": "betternether:cincinnasite_ingot",
+      "required": false
+    },
+
+    {
+      "id": "betternether:nether_ruby_block",
+      "required": false
+    },
+    {
+      "id": "betternether:nether_ruby",
+      "required": false
+    },
+
+    {
+      "id": "archon:glisteel_block",
+      "required": false
+    },
+    {
+      "id": "archon:glisteel_ingot",
+      "required": false
+    },
+
+    {
+      "id": "bewitchment:raw_silver_block",
+      "required": false
+    },
+    {
+      "id": "bewitchment:raw_silver",
+      "required": false
+    },
+
+    {
+      "id": "bewitchment:silver_block",
+      "required": false
+    },
+    {
+      "id": "bewitchment:silver_ingot",
+      "required": false
+    },
+
+    {
+      "id": "bewitchment:salt_block",
+      "required": false
+    },
+    {
+      "id": "bewitchment:salt",
+      "required": false
+    },
+
+    {
+      "id": "bewitchment:dragons_blood_resin_block",
+      "required": false
+    },
+    {
+      "id": "bewitchment:dragons_blood_resin",
+      "required": false
+    },
+
+    {
+      "id": "blast:gunpowder_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:gunpowder",
+      "required": false
+    },
+
+    {
+      "id": "biomemakeover:illunite_block",
+      "required": false
+    },
+    {
+      "id": "biomemakeover:illunite_shard",
+      "required": false
+    },
+
+    {
+      "id": "byg:mud_block",
+      "required": false
+    },
+    {
+      "id": "byg:mud_ball",
+      "required": false
+    },
+
+    {
+      "id": "byg:ametrine_block",
+      "required": false
+    },
+    {
+      "id": "byg:ametrine_gems",
+      "required": false
+    },
+
+    {
+      "id": "byg:raw_pendorite_block",
+      "required": false
+    },
+    {
+      "id": "byg:raw_pendorite",
+      "required": false
+    },
+
+    {
+      "id": "byg:pendorite_block",
+      "required": false
+    },
+    {
+      "id": "byg:pendorite_ingot",
+      "required": false
+    },
+
+    {
+      "id": "byg:embur_gel_block",
+      "required": false
+    },
+    {
+      "id": "byg:embur_gel_ball",
+      "required": false
+    },
+
+    {
+      "id": "byg:anthracite_block",
+      "required": false
+    },
+    {
+      "id": "byg:anthracite",
+      "required": false
+    },
+
+    {
+      "id": "byg:lignite_block",
+      "required": false
+    },
+    {
+      "id": "byg:lignite",
+      "required": false
+    },
+
+    {
+      "id": "byg:embur_gel_block",
+      "required": false
+    },
+    {
+      "id": "byg:embur_gel_ball",
+      "required": false
+    },
+
+    {
+      "id": "consistency_plus:withered_bone_block",
+      "required": false
+    },
+    {
+      "id": "consistency_plus:withered_bone_meal",
+      "required": false
+    },
+
+    {
+      "id": "create:raw_zinc_block",
+      "required": false
+    },
+    {
+      "id": "create:raw_zinc",
+      "required": false
+    },
+
+    {
+      "id": "create:zinc_block",
+      "required": false
+    },
+    {
+      "id": "create:zinc_ingot",
+      "required": false
+    },
+
+    {
+      "id": "create:brass_block",
+      "required": false
+    },
+    {
+      "id": "create:brass_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:raw_lead_block",
+      "required": false
+    },
+    {
+      "id": "indrev:raw_lead",
+      "required": false
+    },
+
+    {
+      "id": "indrev:raw_silver_block",
+      "required": false
+    },
+    {
+      "id": "indrev:raw_silver",
+      "required": false
+    },
+
+    {
+      "id": "indrev:raw_tungsten_block",
+      "required": false
+    },
+    {
+      "id": "indrev:raw_tungsten",
+      "required": false
+    },
+
+    {
+      "id": "indrev:raw_tin_block",
+      "required": false
+    },
+    {
+      "id": "indrev:raw_tin",
+      "required": false
+    },
+
+    {
+      "id": "indrev:tungsten_block",
+      "required": false
+    },
+    {
+      "id": "indrev:tungsten_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:tin_block",
+      "required": false
+    },
+    {
+      "id": "indrev:tin_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:steel_block",
+      "required": false
+    },
+    {
+      "id": "indrev:steel_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:silver_block",
+      "required": false
+    },
+    {
+      "id": "indrev:silver_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:lead_block",
+      "required": false
+    },
+    {
+      "id": "indrev:lead_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:electrum_block",
+      "required": false
+    },
+    {
+      "id": "indrev:electrum_ingot",
+      "required": false
+    },
+
+    {
+      "id": "indrev:bronze_block",
+      "required": false
+    },
+    {
+      "id": "indrev:bronze_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:advanced_alloy_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:advanced_alloy_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:aluminum_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:aluminum_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:brass_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:brass_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:bronze_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:bronze_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:chrome_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:chrome_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:electrum_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:electrum_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:hot_tungstensteel_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:hot_tungstensteel_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:invar_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:invar_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:iridium_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:iridium_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:lead_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:lead_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:nickel_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:nickel_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:peridot_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:peridot_gem",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:platinum_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:platinum_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:raw_iridium_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:raw_iridium",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:raw_lead_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:raw_lead",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:raw_silver_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:raw_silver",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:raw_tin_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:raw_tin",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:raw_tungsten_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:raw_tungsten",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:red_garnet_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:red_garnet_gem",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:refined_iron_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:refined_iron_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:ruby_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:ruby_gem",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:sapphire_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:sapphire_gem",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:silver_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:silver_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:steel_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:steel_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:tin_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:tin_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:titanium_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:titanium_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:tungsten_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:tungsten_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:tungstensteel_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:tungstensteel_ingot",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:yellow_garnet_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:yellow_garnet_gem",
+      "required": false
+    },
+
+    {
+      "id": "techreborn:zinc_storage_block",
+      "required": false
+    },
+    {
+      "id": "techreborn:zinc_ingot",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:topaz_storage_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:topaz_shard",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:amethyst_storage_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:amethyst_shard",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:citrine_storage_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:citrine_shard",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:onyx_storage_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:onyx_shard",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:azurite_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:raw_azurite",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:sparklestone_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:sparklestone_gem",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:topaz_storage_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:topaz_shard",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:orange_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:orange_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:magenta_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:magenta_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:light_blue_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_blue_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:yellow_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:yellow_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:lime_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:lime_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:pink_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:pink_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:cyan_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:cyan_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:purple_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:purple_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:blue_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:blue_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:brown_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:brown_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:green_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:green_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:red_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:red_pigment",
+      "required": false
+    },
+
+    {
+      "id": "spectrum:black_block",
+      "required": false
+    },
+    {
+      "id": "spectrum:black_pigment",
+      "required": false
+    },
+
+    {
+      "id": "the_aether:zanite_block",
+      "required": false
+    },
+    {
+      "id": "the_aether:zanite_gemstone",
+      "required": false
+    },
+
+    {
+      "id": "the_aether:block_of_gravitite",
+      "required": false
+    },
+    {
+      "id": "the_aether:gravitite_gemstone",
+      "required": false
+    },
+
+    {
+      "id": "the_aether:zanite_block",
+      "required": false
+    },
+    {
+      "id": "the_aether:zanite_gemstone",
+      "required": false
+    },
+
+    {
+      "id": "twilightforest:ironwood_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:ironwood_ingot",
+      "required": false
+    },
+
+    {
+      "id": "twilightforest:steeleaf_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:steeleaf_ingot",
+      "required": false
+    },
+
+    {
+      "id": "twilightforest:fiery_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:fiery_ingot",
+      "required": false
+    },
+
+    {
+      "id": "twilightforest:knightmetal_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:knightmetal_ingot",
+      "required": false
+    },
+
+    {
+      "id": "twilightforest:carminite_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:carminite",
+      "required": false
+    },
+
+    {
+      "id": "twilightforest:arctic_fur_block",
+      "required": false
+    },
+    {
+      "id": "twilightforest:arctic_fur",
+      "required": false
+    },
+
+    {
+      "id": "valley:charcoal_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:charcoal",
+      "required": false
+    },
+
+    {
+      "id": "valley:glow_kelp_block",
+      "required": false
+    },
+    {
+      "id": "valley:glow_kelp",
+      "required": false
+    },
+
+    {
+      "id": "valley:seaweed_block",
+      "required": false
+    },
+    {
+      "id": "valley:dried_seaweed",
+      "required": false
+    },
+
+    {
+      "id": "valley:glow_kelp_block",
+      "required": false
+    },
+    {
+      "id": "valley:glow_kelp",
+      "required": false
+    },
+
+    {
+      "id": "valley:salt_block",
+      "required": false
+    },
+    {
+      "id": "valley:salt",
+      "required": false
+    },
+
+    {
+      "id": "valley:saltpeter_block",
+      "required": false
+    },
+    {
+      "id": "valley:saltpeter",
+      "required": false
+    },
+
+    {
+      "id": "valley:rotten_flesh_block",
+      "required": false
+    },
+    {
+      "id": "minecraft:rotten_flesh",
+      "required": false
+    },
+
+    {
+      "id": "valley:saltpeter_block",
+      "required": false
+    },
+    {
+      "id": "valley:saltpeter",
+      "required": false
+    },
+
+    {
+      "id": "ae2:quartz_block",
+      "required": false
+    },
+    {
+      "id": "#c:certus_quartz",
+      "required": false
+    },
+
+    {
+      "id": "ae2:quartz_block",
+      "required": false
+    },
+    {
+      "id": "#c:certus_quartz",
+      "required": false
+    },
+
+    {
+      "id": "ae2:fluix_block",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_crystal",
+      "required": false
+    },
+
+    {
+      "id": "ae2:sky_stone_small_brick",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_sky_stone_block",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_brick",
+      "required": false
+    }
   ]
 }

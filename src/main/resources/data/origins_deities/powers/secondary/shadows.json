@@ -10,15 +10,8 @@
         {
           "type": "origins:in_block",
           "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:grass"
-          }
-        },
-        {
-          "type": "origins:in_block",
-          "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:tall_grass"
+            "type": "origins:in_tag",
+            "tag": "origins_deities:shadows"
           }
         },
         {
@@ -53,9 +46,22 @@
     "green": 0.2,
     "blue": 0.2,
     "bientity_condition": {
-      "type": "origins:distance",
-      "comparison": "<=",
-      "compare_to": 32
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:distance",
+          "comparison": "<=",
+          "compare_to": 32
+        },
+        {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:in_tag",
+            "tag": "origins_deities:hidden_from_shadow_sight",
+            "inverted": true
+          }
+        }
+      ]
     },
     "condition": {
       "type": "origins:power_active",
