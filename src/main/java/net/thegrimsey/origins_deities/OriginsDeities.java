@@ -2,9 +2,12 @@ package net.thegrimsey.origins_deities;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.MapColor;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -14,7 +17,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.thegrimsey.origins_deities.blocks.GlobeOfLight;
+import net.thegrimsey.origins_deities.blocks.GodFont;
 import net.thegrimsey.origins_deities.entities.ThrownGlobeOfLightEntity;
+import net.thegrimsey.origins_deities.entity.GodFontBlockEntity;
 import net.thegrimsey.origins_deities.items.StoryItem;
 import net.thegrimsey.origins_deities.origins.EntityActions;
 import net.thegrimsey.origins_deities.origins.EntityConditions;
@@ -23,6 +28,11 @@ import net.thegrimsey.origins_deities.origins.ItemConditions;
 
 public class OriginsDeities implements ModInitializer {
 	public static final String MODID = "origins_deities";
+
+	public static BlockEntityType<GodFontBlockEntity> GOD_FONT_BLOCKENTITY;
+
+	public static final GodFont GOD_FONT = new GodFont(AbstractBlock.Settings.create().mapColor(MapColor.GOLD).pistonBehavior(PistonBehavior.BLOCK).strength(-1.0F, 3600000.0F).noCollision().noBlockBreakParticles());
+
 	public static final EntityType<ThrownGlobeOfLightEntity> THROWN_GLOBE_OF_LIGHT_ENTITY;
 	public static final GlobeOfLight GLOBE_OF_LIGHT = new GlobeOfLight(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).breakInstantly().noCollision().luminance(state -> 15).ticksRandomly().sounds(BlockSoundGroup.GLASS));
 	public static final BlockItem GLOBE_OF_LIGHT_ITEM = new BlockItem(GLOBE_OF_LIGHT, new FabricItemSettings());
@@ -36,11 +46,15 @@ public class OriginsDeities implements ModInitializer {
 		EntityActions.registerEntityAction();
 		EntityPowers.registerEntityPowers();
 
+		Registry.register(Registries.BLOCK, new Identifier(MODID, "god_font"), GOD_FONT);
+
 		Registry.register(Registries.BLOCK, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT);
 		Registry.register(Registries.ITEM, new Identifier(MODID, "globe_of_light"), GLOBE_OF_LIGHT_ITEM);
 		Registry.register(Registries.ENTITY_TYPE, new Identifier(MODID, "globe_of_light"), THROWN_GLOBE_OF_LIGHT_ENTITY);
 
 		Registry.register(Registries.ITEM, new Identifier(MODID, "story"), STORY);
+
+		GOD_FONT_BLOCKENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(MODID, "god_font_blockentity"), FabricBlockEntityTypeBuilder.create(GodFontBlockEntity::new, GOD_FONT).build(null));
 	}
 
 	static {

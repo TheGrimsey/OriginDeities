@@ -1,0 +1,119 @@
+{
+    "name": "Harmonize",
+    "description": "When active, reduce your damage taken by 75%* & dealt by 50%.\nDrains Echoes from Beyond.\n\n*§o§c40% for players & tamed creatures.§r",
+    "type": "origins:multiple",
+
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins_deities.god_active"
+        }
+    },
+    "drain_echoes": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "origins_deities:primary/echoes_from_beyond",
+            "change": -1,
+            "operation": "add"
+        },
+        "interval": 4,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "shake": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "take_less": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "name": "caelon_harmonious_take",
+            "operation": "multiply_total",
+            "value": -0.75
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins_deities:primary/echoes_from_beyond",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:player"
+                    },
+                    {
+                        "type": "origins:tamed"
+                    }
+                ]
+            },
+            "inverted": true
+        }
+    },
+    "take_less_player": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "name": "caelon_harmonious_take",
+            "operation": "multiply_total",
+            "value": -0.4
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "origins_deities:primary/echoes_from_beyond",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:player"
+                    },
+                    {
+                        "type": "origins:tamed"
+                    }
+                ]
+            }
+        }
+    },
+    "deal_less": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "caelon_harmonious_deal",
+            "operation": "multiply_total",
+            "value": -0.50
+        }
+    }
+}

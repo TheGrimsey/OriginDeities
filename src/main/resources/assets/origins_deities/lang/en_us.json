@@ -15,7 +15,7 @@
     "origin.origin_deities.arum.description": "God of Soldiers, War, and Glory",
 
     "origin.origin_deities.caelon.name": "Caelon",
-    "origin.origin_deities.caelon.description": "Bringer of Peace",
+    "origin.origin_deities.caelon.description": "The Fallen Harmony",
 
     "origin.origin_deities.hemos.name": "Hemos",
     "origin.origin_deities.hemos.description": "Herald of Light",
@@ -82,6 +82,9 @@
     "origins_deities.story.name.final.frozen.7": "the Arctic",
     "origins_deities.story.name.final.frozen.8": "Glaciers",
 
+    "origins_deities.story.name.final.invisibility.0": "Escape",
+    "origins_deities.story.name.final.invisibility.1": "Vanishing",
+    "origins_deities.story.name.final.invisibility.2": "Deception",
 
     "origins_deities.story.name.forged.0": ", 1st Ed",
     "origins_deities.story.name.forged.1": ", Signed Copy",
@@ -96,5 +99,6 @@
     "origins_deities.lokin.inventory": "Stories",
     "origins_deities.story.effect.damage": "Damage",
     "origins_deities.story.effect.heal": "Heal",
-    "origins_deities.story.effect.freeze": "Freeze"
+    "origins_deities.story.effect.freeze": "Freeze",
+    "origins_deities.story.effect.invisibility": "Invisibility"
 }

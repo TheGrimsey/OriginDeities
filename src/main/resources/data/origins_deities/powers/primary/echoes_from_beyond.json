@@ -1,0 +1,11 @@
+{
+    "name": "Echoes from Beyond",
+    "description": "Standing near a God Font grants you echoes from beyond.",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 225,
+    "hud_render": {
+        "bar_index": 20,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png"
+    }
+}

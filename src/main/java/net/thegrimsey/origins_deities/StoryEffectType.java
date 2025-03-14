@@ -20,6 +20,11 @@ public enum StoryEffectType {
         "origins_deities.story.effect.freeze",
         Formatting.AQUA,
         new PowerTypeReference(new Identifier(OriginsDeities.MODID,""))
+    ),
+    INVISIBILITY(
+            "origins_deities.story.effect.invisibility",
+            Formatting.WHITE,
+            new PowerTypeReference(new Identifier(OriginsDeities.MODID,""))
     );
 
     public static final StoryEffectType[] NEGATIVE_EFFECTS = new StoryEffectType[]{StoryEffectType.DAMAGE};

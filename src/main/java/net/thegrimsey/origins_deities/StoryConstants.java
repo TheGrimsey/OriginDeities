@@ -10,6 +10,10 @@ public class StoryConstants {
     static final String HEALING_TRANSLATION_KEY = "origins_deities.story.name.final.healing.";
     static final int HEALING_FINAL_NAMES_COUNT = 8;
 
+    public static final String INVISIBILITY_TRANSLATION_KEY = "origins_deities.story.name.final.invisibility.";
+    public static final int INVISIBILITY_COUNT = 3;
+
     public static final String FORGED_TRANSLATION_KEY = "origins_deities.story.name.forged.";
     public static final int FORGED_COUNT = 7;
+
 }

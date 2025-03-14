@@ -12,8 +12,8 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "Pug's Maven"
-        url = 'https://maven.merchantpug.net/releases/'
+        name = "Greenhouse Team Maven"
+        url = "https://repo.greenhouse.house/releases/"
     }
     maven {
         name = "Ladysnake Libs"
