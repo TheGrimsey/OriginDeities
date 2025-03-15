@@ -5,7 +5,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "origins_deities:god_font",
+        "location": "origins_deities:god_font_well",
 
         "processors": "origins_deities:decayer",
 

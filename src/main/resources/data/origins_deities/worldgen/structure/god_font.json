@@ -3,7 +3,7 @@
 
   "start_pool": "origins_deities:god_font",
 
-  "size": 2,
+  "size": 1,
 
   "max_distance_from_center": 16,
 
