@@ -22,7 +22,7 @@ import java.util.List;
 
 public class StoryItem extends Item {
     public final static int ARTICLE_COUNT = 3;
-    public final static int DESCRIPTOR_COUNT = 12;
+    public final static int DESCRIPTOR_COUNT = 23;
     public final static int BINDING_COUNT = 1;
 
     public StoryItem() {

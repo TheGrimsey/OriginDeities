@@ -11,8 +11,8 @@
     "origin.origin_deities.arthera.name": "Arthera",
     "origin.origin_deities.arthera.description": "Warden of Nature",
 
-    "origin.origin_deities.arum.name": "Arum",
-    "origin.origin_deities.arum.description": "God of Soldiers, War, and Glory",
+    "origin.origin_deities.arum.name": "Aruum",
+    "origin.origin_deities.arum.description": "God of War & Glory",
 
     "origin.origin_deities.caelon.name": "Caelon",
     "origin.origin_deities.caelon.description": "The Fallen Harmony",
@@ -52,6 +52,17 @@
     "origins_deities.story.name.descriptor.9": "Saga",
     "origins_deities.story.name.descriptor.10": "Epic",
     "origins_deities.story.name.descriptor.11": "Tragedy",
+    "origins_deities.story.name.descriptor.12": "Parable",
+    "origins_deities.story.name.descriptor.13": "Hymn",
+    "origins_deities.story.name.descriptor.14": "Sonnet",
+    "origins_deities.story.name.descriptor.15": "Rhapsody",
+    "origins_deities.story.name.descriptor.16": "Legend",
+    "origins_deities.story.name.descriptor.17": "Chronicle",
+    "origins_deities.story.name.descriptor.18": "Myth",
+    "origins_deities.story.name.descriptor.19": "Mythos",
+    "origins_deities.story.name.descriptor.20": "Codex",
+    "origins_deities.story.name.descriptor.21": "Edda",
+    "origins_deities.story.name.descriptor.22": "Testament",
 
     "origins_deities.story.name.binding.0": "of",
 
@@ -62,6 +73,12 @@
     "origins_deities.story.name.final.kill.4": "the %s",
     "origins_deities.story.name.final.kill.5": "the Hunt",
     "origins_deities.story.name.final.kill.6": "Entropy",
+    "origins_deities.story.name.final.kill.7": "Doom",
+    "origins_deities.story.name.final.kill.8": "Oblivion",
+    "origins_deities.story.name.final.kill.9": "Silence",
+    "origins_deities.story.name.final.kill.10": "Necrosis",
+    "origins_deities.story.name.final.kill.11": "Thanatos",
+    "origins_deities.story.name.final.kill.12": "Requiem",
 
     "origins_deities.story.name.final.healing.0": "Healing",
     "origins_deities.story.name.final.healing.1": "Rejuvenation",
@@ -71,6 +88,11 @@
     "origins_deities.story.name.final.healing.5": "Hearts",
     "origins_deities.story.name.final.healing.6": "Life",
     "origins_deities.story.name.final.healing.7": "the %s",
+    "origins_deities.story.name.final.healing.8": "Aegis",
+    "origins_deities.story.name.final.healing.9": "Evergrowth",
+    "origins_deities.story.name.final.healing.10": "Anima",
+    "origins_deities.story.name.final.healing.11": "Grace",
+    "origins_deities.story.name.final.healing.12": "Vitalis",
 
     "origins_deities.story.name.final.frozen.0": "Ice",
     "origins_deities.story.name.final.frozen.1": "Frost",

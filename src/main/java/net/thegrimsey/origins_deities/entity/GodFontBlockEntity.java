@@ -2,17 +2,14 @@ package net.thegrimsey.origins_deities.entity;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.apace100.apoli.power.ResourcePower;
-import io.github.apace100.apoli.power.factory.condition.entity.ResourceCondition;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import net.thegrimsey.origins_deities.OriginsDeities;
-import net.thegrimsey.origins_deities.origins.powers.SelfActionOnBreedPower;
 
 import java.util.Iterator;
 import java.util.List;

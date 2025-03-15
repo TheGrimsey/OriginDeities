@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "origins_deities:god_font",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 48459829809,
+
+    "spacing": 16,
+    "separation": 6
+  }
+}
