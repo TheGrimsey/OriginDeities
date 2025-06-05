@@ -3,10 +3,13 @@ package net.thegrimsey.origins_deities.blocks;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BlockWithEntity;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.thegrimsey.origins_deities.OriginsDeities;
 import net.thegrimsey.origins_deities.entity.GodFontBlockEntity;
@@ -17,9 +20,16 @@ public class GodFont extends BlockWithEntity {
         super(settings.luminance(value -> 15));
     }
 
+    final VoxelShape SHAPE = createCuboidShape(2,2,2,14,14,14);
+
     @Override
     public BlockRenderType getRenderType(BlockState state) {
         return BlockRenderType.ENTITYBLOCK_ANIMATED;
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return SHAPE;
     }
 
     @Nullable

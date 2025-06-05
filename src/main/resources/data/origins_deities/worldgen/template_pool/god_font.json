@@ -13,6 +13,102 @@
 
         "element_type": "minecraft:single_pool_element"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_floating",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_gold",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_meadow",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_quartz",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_sculk_tree",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_stone",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_structure",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "origins_deities:shrine_structure_tall",
+
+        "processors": "origins_deities:decayer",
+
+        "projection": "rigid",
+
+        "element_type": "minecraft:single_pool_element"
+      }
     }
   ]
 }

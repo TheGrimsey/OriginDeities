@@ -7,11 +7,13 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.PotionItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -20,6 +22,7 @@ import net.thegrimsey.origins_deities.blocks.GlobeOfLight;
 import net.thegrimsey.origins_deities.blocks.GodFont;
 import net.thegrimsey.origins_deities.entities.ThrownGlobeOfLightEntity;
 import net.thegrimsey.origins_deities.entity.GodFontBlockEntity;
+import net.thegrimsey.origins_deities.items.MyceliumSporeItem;
 import net.thegrimsey.origins_deities.items.StoryItem;
 import net.thegrimsey.origins_deities.origins.EntityActions;
 import net.thegrimsey.origins_deities.origins.EntityConditions;
@@ -31,13 +34,15 @@ public class OriginsDeities implements ModInitializer {
 
 	public static BlockEntityType<GodFontBlockEntity> GOD_FONT_BLOCKENTITY;
 
-	public static final GodFont GOD_FONT = new GodFont(AbstractBlock.Settings.create().mapColor(MapColor.GOLD).pistonBehavior(PistonBehavior.BLOCK).strength(-1.0F, 3600000.0F).noCollision().noBlockBreakParticles());
+	public static final GodFont GOD_FONT = new GodFont(AbstractBlock.Settings.create().mapColor(MapColor.GOLD).pistonBehavior(PistonBehavior.BLOCK).strength(-1.0F, 3600000.0F).noBlockBreakParticles().instrument(Instrument.BELL));
 
 	public static final EntityType<ThrownGlobeOfLightEntity> THROWN_GLOBE_OF_LIGHT_ENTITY;
 	public static final GlobeOfLight GLOBE_OF_LIGHT = new GlobeOfLight(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).breakInstantly().noCollision().luminance(state -> 15).ticksRandomly().sounds(BlockSoundGroup.GLASS));
 	public static final BlockItem GLOBE_OF_LIGHT_ITEM = new BlockItem(GLOBE_OF_LIGHT, new FabricItemSettings());
 
 	public static final StoryItem STORY = new StoryItem();
+
+	public static final MyceliumSporeItem SPORE = new MyceliumSporeItem();
 
 	@Override
 	public void onInitialize() {
@@ -53,6 +58,8 @@ public class OriginsDeities implements ModInitializer {
 		Registry.register(Registries.ENTITY_TYPE, new Identifier(MODID, "globe_of_light"), THROWN_GLOBE_OF_LIGHT_ENTITY);
 
 		Registry.register(Registries.ITEM, new Identifier(MODID, "story"), STORY);
+
+		Registry.register(Registries.ITEM, new Identifier(MODID, "spore"), SPORE);
 
 		GOD_FONT_BLOCKENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(MODID, "god_font_blockentity"), FabricBlockEntityTypeBuilder.create(GodFontBlockEntity::new, GOD_FONT).build(null));
 	}
